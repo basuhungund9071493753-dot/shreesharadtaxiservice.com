@@ -893,3 +893,15 @@ footer {
   }
 
 }
+
+.logo img {
+    height: 55px;
+    width: auto;
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .logo img {
+        height: 45px;
+    }
+}
