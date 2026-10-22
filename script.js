@@ -133,7 +133,7 @@ document.addEventListener("DOMContentLoaded", function () {
       ].join("\n");
 
       const whatsappUrl =
-        "https://wa.me/916362177207?text=" +
+        "https://wa.me/918296989556?text=" +
         encodeURIComponent(enquiry);
 
       window.open(whatsappUrl, "_blank", "noopener,noreferrer");
