@@ -4,740 +4,515 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Taxi Tour Packages in Mangalore | Shree Sharada Taxi Service</title>
+    <title>Taxi Tour Packages from Mangalore | Shree Sharada Taxi Service</title>
 
-    <meta name="description" content="Explore taxi tour packages from Mangalore with Shree Sharada Taxi Service. Plan temple visits, coastal Karnataka trips, hill station holidays and family tours.">
-    <meta name="keywords" content="Mangalore taxi tour packages, Mangalore sightseeing taxi, Karnataka tour packages, temple tour taxi Mangalore, family taxi packages, Shree Sharada Taxi Service">
-    <meta name="author" content="Shree Sharada Taxi Service">
+    <meta name="description" content="Explore taxi tour packages from Mangalore including Coastal Karnataka, Dharmasthala, Kukke Subrahmanya, Udupi, Murudeshwar, Gokarna, Coorg, Chikkamagaluru and Mysore tours.">
+
     <meta name="robots" content="index, follow">
-
-    <link rel="canonical" href="https://shreesharadataxiservice.com/packages.html">
     <meta name="theme-color" content="#0757a8">
 
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Taxi Tour Packages in Mangalore | Shree Sharada Taxi Service">
-    <meta property="og:description" content="Discover temples, beaches, hill stations and popular destinations from Mangalore with comfortable taxi travel.">
-    <meta property="og:url" content="https://shreesharadataxiservice.com/packages.html">
-    <meta property="og:image" content="https://shreesharadataxiservice.com/assets/logo.png">
-
-    <link rel="icon" href="assets/logo.png" type="image/png">
+    <link rel="canonical" href="https://shreesharadataxiservice.com/packages.html">
     <link rel="stylesheet" href="style.css">
 
-    <script src="script.js" defer></script>
-
-    <style>
-        .packages-hero {
-            position: relative;
-            padding: 85px 20px;
-            text-align: center;
-            color: #fff;
-            background: linear-gradient(135deg, #06366c, #0757a8 65%, #102d50);
-        }
-
-        .packages-hero .eyebrow {
-            color: #f4c75b;
-            text-transform: uppercase;
-            font-weight: 700;
-            letter-spacing: 2px;
-        }
-
-        .packages-hero h1 {
-            max-width: 900px;
-            margin: 18px auto;
-            font-size: clamp(2rem, 5vw, 3.5rem);
-            line-height: 1.2;
-        }
-
-        .packages-hero p {
-            max-width: 720px;
-            margin: 0 auto 28px;
-            line-height: 1.8;
-        }
-
-        .packages-hero .hero-actions {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: 14px;
-        }
-
-        .packages-hero .hero-btn {
-            display: inline-block;
-            padding: 13px 24px;
-            border-radius: 7px;
-            text-decoration: none;
-            font-weight: 700;
-            transition: .2s ease;
-        }
-
-        .packages-hero .hero-btn-primary {
-            background: #f4c75b;
-            color: #102d50;
-        }
-
-        .packages-hero .hero-btn-secondary {
-            border: 1px solid #fff;
-            color: #fff;
-        }
-
-        .packages-hero .hero-btn:hover {
-            transform: translateY(-2px);
-        }
-
-        .packages-section {
-            padding: 65px 20px;
-        }
-
-        .packages-container {
-            width: min(1180px, 100%);
-            margin: 0 auto;
-        }
-
-        .packages-heading {
-            max-width: 760px;
-            margin: 0 auto 38px;
-            text-align: center;
-        }
-
-        .packages-heading .eyebrow {
-            color: #b48721;
-            font-weight: 700;
-            letter-spacing: 1.5px;
-            text-transform: uppercase;
-        }
-
-        .packages-heading h2 {
-            margin: 12px 0;
-            color: #102d50;
-            font-size: clamp(1.8rem, 4vw, 2.6rem);
-        }
-
-        .packages-heading p {
-            line-height: 1.8;
-        }
-
-        .packages-grid {
-            display: grid;
-            grid-template-columns: repeat(3, minmax(0, 1fr));
-            gap: 24px;
-        }
-
-        .package-card {
-            display: flex;
-            flex-direction: column;
-            overflow: hidden;
-            background: #fff;
-            border: 1px solid #e5eaf1;
-            border-radius: 12px;
-            box-shadow: 0 8px 28px rgba(16, 45, 80, .07);
-            transition: transform .25s ease, box-shadow .25s ease;
-        }
-
-        .package-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 14px 32px rgba(16, 45, 80, .13);
-        }
-
-        .package-card-image {
-            width: 100%;
-            aspect-ratio: 16 / 10;
-            object-fit: cover;
-            background: #e9eef5;
-        }
-
-        .package-card-content {
-            display: flex;
-            flex: 1;
-            flex-direction: column;
-            padding: 23px;
-        }
-
-        .package-card h3 {
-            margin: 0 0 12px;
-            color: #102d50;
-            font-size: 1.25rem;
-        }
-
-        .package-card p {
-            margin: 0 0 18px;
-            line-height: 1.75;
-        }
-
-        .package-highlights {
-            padding-left: 19px;
-            margin: 0 0 22px;
-            line-height: 1.9;
-        }
-
-        .package-highlights li::marker {
-            color: #b48721;
-        }
-
-        .package-actions {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-            margin-top: auto;
-        }
-
-        .package-btn {
-            display: inline-block;
-            padding: 11px 15px;
-            border-radius: 6px;
-            text-align: center;
-            text-decoration: none;
-            font-size: .92rem;
-            font-weight: 700;
-        }
-
-        .package-btn-primary {
-            background: #0757a8;
-            color: #fff;
-        }
-
-        .package-btn-secondary {
-            background: #fff7e2;
-            color: #70500d;
-            border: 1px solid #ead59b;
-        }
-
-        .package-note {
-            padding: 22px;
-            margin-top: 35px;
-            border-left: 4px solid #d5a52d;
-            border-radius: 5px;
-            background: #f7f9fc;
-            line-height: 1.8;
-        }
-
-        .package-cta {
-            padding: 55px 20px;
-            color: #fff;
-            text-align: center;
-            background: #102d50;
-        }
-
-        .package-cta h2 {
-            margin-top: 0;
-            font-size: clamp(1.7rem, 4vw, 2.4rem);
-        }
-
-        .package-cta p {
-            max-width: 720px;
-            margin: 0 auto 24px;
-            line-height: 1.8;
-        }
-
-        .package-cta .hero-actions {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: 12px;
-        }
-
-        @media (max-width: 900px) {
-            .packages-grid {
-                grid-template-columns: repeat(2, minmax(0, 1fr));
-            }
-        }
-
-        @media (max-width: 600px) {
-            .packages-hero {
-                padding: 60px 18px;
-            }
-
-            .packages-section {
-                padding: 45px 16px;
-            }
-
-            .packages-grid {
-                grid-template-columns: 1fr;
-                gap: 20px;
-            }
-
-            .package-card-content {
-                padding: 20px;
-            }
-
-            .package-actions {
-                flex-direction: column;
-            }
-
-            .package-btn {
-                width: 100%;
-                box-sizing: border-box;
-            }
-        }
-    </style>
+    <meta property="og:title" content="Taxi Tour Packages from Mangalore | Shree Sharada Taxi Service">
+    <meta property="og:description" content="Discover temple tours, coastal destinations, hill stations and heritage attractions with Shree Sharada Taxi Service.">
+    <meta property="og:url" content="https://shreesharadataxiservice.com/packages.html">
+    <meta property="og:type" content="website">
 
     <script type="application/ld+json">
     {
-      "@context": "https://schema.org",
-      "@type": "TaxiService",
-      "name": "Shree Sharada Taxi Service",
-      "url": "https://shreesharadataxiservice.com/",
-      "logo": "https://shreesharadataxiservice.com/assets/logo.png",
-      "telephone": "+918296989556",
-      "areaServed": [
-        {
-          "@type": "City",
-          "name": "Mangalore"
-        },
-        {
-          "@type": "AdministrativeArea",
-          "name": "Dakshina Kannada"
-        },
-        {
-          "@type": "State",
-          "name": "Karnataka"
-        }
-      ],
-      "description": "Taxi services and customizable sightseeing and tour travel from Mangalore."
+        "@context": "https://schema.org",
+        "@type": "TaxiService",
+        "name": "Shree Sharada Taxi Service",
+        "url": "https://shreesharadataxiservice.com/",
+        "telephone": "+91-8296989556",
+        "areaServed": [
+            {
+                "@type": "City",
+                "name": "Mangalore"
+            },
+            {
+                "@type": "AdministrativeArea",
+                "name": "Karnataka"
+            }
+        ],
+        "description": "Taxi service in Mangalore for sightseeing, pilgrimage journeys, family holidays, outstation travel and Karnataka tour packages."
     }
     </script>
 </head>
 
 <body>
 
-    <!-- Header: keep consistent with the existing website -->
+    <!-- HEADER -->
     <header class="site-header">
-        <div class="container">
-            <a href="index.html" class="logo" aria-label="Shree Sharada Taxi Service Home">
+        <div class="container header-inner">
+
+            <a href="index.html"
+               class="logo"
+               aria-label="Shree Sharada Taxi Service Home">
+
                 <img src="assets/logo.png"
-                     alt="Shree Sharada Taxi Service Logo"
-                     width="180"
-                     height="70">
+                     alt="Shree Sharada Taxi Service Logo">
+
+                <span>Shree Sharada Taxi Service</span>
             </a>
 
             <button class="menu-toggle"
                     type="button"
                     aria-label="Toggle navigation"
                     aria-expanded="false"
-                    aria-controls="primary-navigation">
-                <span></span>
-                <span></span>
-                <span></span>
+                    aria-controls="main-navigation">
+                ☰
             </button>
 
-            <nav class="main-nav" id="primary-navigation" aria-label="Main navigation">
+            <nav class="main-nav" id="main-navigation">
                 <a href="index.html">Home</a>
                 <a href="about.html">About</a>
                 <a href="services.html">Services</a>
                 <a href="fleet.html">Our Fleet</a>
-                <a href="packages.html" class="active" aria-current="page">Tour Packages</a>
-                <a href="routes.html">Popular Routes</a>
+                <a href="packages.html"
+                   class="active"
+                   aria-current="page">Tour Packages</a>
+                <a href="routes.html">Routes</a>
                 <a href="contact.html">Contact</a>
-                <a href="https://wa.me/918296989556?text=Hello%2C%20I%20would%20like%20to%20enquire%20about%20your%20tour%20packages."
-                   class="nav-cta"
-                   target="_blank"
-                   rel="noopener noreferrer">Enquire Now</a>
             </nav>
+
         </div>
     </header>
 
     <main>
-        <!-- Hero -->
-        <section class="packages-hero">
-            <span class="eyebrow">Discover More with Every Journey</span>
 
-            <h1>Taxi Tour Packages from Mangalore</h1>
+        <!-- PAGE HERO -->
+        <section class="page-hero">
+            <div class="container">
 
-            <p>
-                Explore sacred temples, beautiful beaches, peaceful hill stations
-                and Karnataka's cultural destinations with Shree Sharada Taxi
-                Service. Plan your journey with comfortable transport and a
-                schedule tailored to your travel needs.
-            </p>
+                <span class="eyebrow">DISCOVER KARNATAKA</span>
 
-            <div class="hero-actions">
-                <a class="hero-btn hero-btn-primary"
-                   href="https://wa.me/918296989556?text=Hello%2C%20I%20would%20like%20to%20plan%20a%20taxi%20tour%20from%20Mangalore."
-                   target="_blank"
-                   rel="noopener noreferrer">Plan Your Tour</a>
+                <h1>Taxi Tour Packages from Mangalore</h1>
 
-                <a class="hero-btn hero-btn-secondary"
-                   href="tel:+918296989556">Call +91 8296989556</a>
+                <p>
+                    Discover beautiful beaches, famous temples, green
+                    hill stations and historic destinations with
+                    Shree Sharada Taxi Service. Choose a tour package
+                    and contact us to plan your journey.
+                </p>
+
+                <div class="hero-actions">
+
+                    <a href="tel:+918296989556"
+                       class="btn btn-primary">
+                        Call Now
+                    </a>
+
+                    <a href="https://wa.me/918296989556?text=Hello%2C%20I%20would%20like%20to%20enquire%20about%20your%20tour%20packages."
+                       class="btn btn-secondary"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        WhatsApp Enquiry
+                    </a>
+
+                </div>
             </div>
         </section>
 
-        <!-- Packages -->
-        <section class="packages-section">
-            <div class="packages-container">
+        <!-- PACKAGE INTRODUCTION -->
+        <section class="section">
+            <div class="container">
 
-                <div class="packages-heading">
-                    <span class="eyebrow">Explore Your Next Destination</span>
-                    <h2>Choose Your Tour Package</h2>
+                <div class="section-heading">
+                    <span class="eyebrow">FIND YOUR NEXT JOURNEY</span>
+
+                    <h2>Explore Our Tour Packages</h2>
+
                     <p>
-                        Whether you are planning a family holiday, a temple visit
-                        or a weekend escape, explore these popular travel ideas.
-                        Contact us to discuss your destinations, trip duration
-                        and vehicle requirements.
+                        Choose from these popular travel ideas starting
+                        from Mangalore. Open any package to learn about
+                        the destinations and enquire about your trip.
                     </p>
                 </div>
 
-                <div class="packages-grid">
+                <!-- 10 CLICKABLE TOUR PACKAGES -->
+                <div class="package-grid">
 
-                    <article class="package-card">
-                        <img class="package-card-image"
-                             src="assets/dharmasthala.jpg"
-                             alt="Shri Manjunatha Temple at Dharmasthala"
-                             loading="lazy"
-                             width="640"
-                             height="400">
+                    <!-- PACKAGE 1 -->
+                    <a class="package-card"
+                       href="packages/coastal-karnataka-tour.html">
 
-                        <div class="package-card-content">
-                            <h3>Dharmasthala Temple Tour</h3>
-                            <p>
-                                Plan a spiritual visit to Dharmasthala, an
-                                important pilgrimage destination in Karnataka.
-                            </p>
-                            <ul class="package-highlights">
-                                <li>Shri Manjunatha Temple</li>
-                                <li>Customizable departure time</li>
-                                <li>Family and group travel</li>
-                            </ul>
-                            <div class="package-actions">
-                                <a class="package-btn package-btn-primary"
-                                   href="https://wa.me/918296989556?text=Hello%2C%20I%20would%20like%20to%20enquire%20about%20a%20Dharmasthala%20temple%20tour.">
-                                    Enquire on WhatsApp
-                                </a>
-                            </div>
-                        </div>
-                    </article>
+                        <span class="package-number">01</span>
 
-                    <article class="package-card">
-                        <img class="package-card-image"
-                             src="assets/kukke-subrahmanya.jpg"
-                             alt="Kukke Subrahmanya temple pilgrimage destination"
-                             loading="lazy"
-                             width="640"
-                             height="400">
+                        <h3>Coastal Karnataka Tour</h3>
 
-                        <div class="package-card-content">
-                            <h3>Kukke Subrahmanya Tour</h3>
-                            <p>
-                                Arrange a pilgrimage to Kukke Subrahmanya,
-                                surrounded by the greenery of the Western Ghats.
-                            </p>
-                            <ul class="package-highlights">
-                                <li>Temple visit planning</li>
-                                <li>Flexible trip itinerary</li>
-                                <li>Convenient return journey</li>
-                            </ul>
-                            <div class="package-actions">
-                                <a class="package-btn package-btn-primary"
-                                   href="https://wa.me/918296989556?text=Hello%2C%20I%20would%20like%20to%20enquire%20about%20a%20Kukke%20Subrahmanya%20tour.">
-                                    Enquire on WhatsApp
-                                </a>
-                            </div>
-                        </div>
-                    </article>
+                        <p>
+                            Explore Udupi, Malpe Beach, Murudeshwar
+                            and other beautiful coastal destinations.
+                        </p>
 
-                    <article class="package-card">
-                        <img class="package-card-image"
-                             src="assets/udupi.jpg"
-                             alt="Udupi Sri Krishna Matha pilgrimage destination"
-                             loading="lazy"
-                             width="640"
-                             height="400">
+                        <span class="package-link">
+                            Explore Package →
+                        </span>
+                    </a>
 
-                        <div class="package-card-content">
-                            <h3>Udupi Temple Tour</h3>
-                            <p>
-                                Visit Udupi's renowned Sri Krishna Matha and
-                                explore nearby attractions according to your plan.
-                            </p>
-                            <ul class="package-highlights">
-                                <li>Sri Krishna Matha</li>
-                                <li>Optional nearby sightseeing</li>
-                                <li>Suitable for families</li>
-                            </ul>
-                            <div class="package-actions">
-                                <a class="package-btn package-btn-primary"
-                                   href="https://wa.me/918296989556?text=Hello%2C%20I%20would%20like%20to%20enquire%20about%20a%20Udupi%20temple%20tour.">
-                                    Enquire on WhatsApp
-                                </a>
-                            </div>
-                        </div>
-                    </article>
+                    <!-- PACKAGE 2 -->
+                    <a class="package-card"
+                       href="packages/temple-tour.html">
 
-                    <article class="package-card">
-                        <img class="package-card-image"
-                             src="assets/coastal-karnataka.jpg"
-                             alt="Scenic coastline of coastal Karnataka"
-                             loading="lazy"
-                             width="640"
-                             height="400">
+                        <span class="package-number">02</span>
 
-                        <div class="package-card-content">
-                            <h3>Coastal Karnataka Tour</h3>
-                            <p>
-                                Discover the coastal region's temples, beaches
-                                and scenic stops on a personalized multi-stop trip.
-                            </p>
-                            <ul class="package-highlights">
-                                <li>Mangalore and Udupi region</li>
-                                <li>Beach and temple visits</li>
-                                <li>Flexible sightseeing stops</li>
-                            </ul>
-                            <div class="package-actions">
-                                <a class="package-btn package-btn-primary"
-                                   href="https://wa.me/918296989556?text=Hello%2C%20I%20would%20like%20to%20plan%20a%20Coastal%20Karnataka%20tour.">
-                                    Enquire on WhatsApp
-                                </a>
-                            </div>
-                        </div>
-                    </article>
+                        <h3>Karnataka Temple Tour</h3>
 
-                    <article class="package-card">
-                        <img class="package-card-image"
-                             src="assets/gokarna.jpg"
-                             alt="Beach and coastline at Gokarna"
-                             loading="lazy"
-                             width="640"
-                             height="400">
+                        <p>
+                            Plan a spiritual journey to well-known
+                            temples around coastal and southern Karnataka.
+                        </p>
 
-                        <div class="package-card-content">
-                            <h3>Gokarna Beach Tour</h3>
-                            <p>
-                                Plan a coastal getaway to Gokarna, known for
-                                its beaches, scenic coastline and temples.
-                            </p>
-                            <ul class="package-highlights">
-                                <li>Beach sightseeing</li>
-                                <li>Optional temple visits</li>
-                                <li>Day trips or longer itineraries</li>
-                            </ul>
-                            <div class="package-actions">
-                                <a class="package-btn package-btn-primary"
-                                   href="https://wa.me/918296989556?text=Hello%2C%20I%20would%20like%20to%20enquire%20about%20a%20Gokarna%20tour.">
-                                    Enquire on WhatsApp
-                                </a>
-                            </div>
-                        </div>
-                    </article>
+                        <span class="package-link">
+                            Explore Package →
+                        </span>
+                    </a>
 
-                    <article class="package-card">
-                        <img class="package-card-image"
-                             src="assets/murudeshwara.jpg"
-                             alt="Murudeshwara Shiva statue and coastal temple"
-                             loading="lazy"
-                             width="640"
-                             height="400">
+                    <!-- PACKAGE 3 -->
+                    <a class="package-card"
+                       href="packages/dharmasthala-kukke-tour.html">
 
-                        <div class="package-card-content">
-                            <h3>Murudeshwara Tour</h3>
-                            <p>
-                                Visit the famous coastal temple destination and
-                                enjoy the sea views around Murudeshwara.
-                            </p>
-                            <ul class="package-highlights">
-                                <li>Murudeshwara Temple</li>
-                                <li>Coastal sightseeing</li>
-                                <li>Custom trip arrangements</li>
-                            </ul>
-                            <div class="package-actions">
-                                <a class="package-btn package-btn-primary"
-                                   href="https://wa.me/918296989556?text=Hello%2C%20I%20would%20like%20to%20enquire%20about%20a%20Murudeshwara%20tour.">
-                                    Enquire on WhatsApp
-                                </a>
-                            </div>
-                        </div>
-                    </article>
+                        <span class="package-number">03</span>
 
-                    <article class="package-card">
-                        <img class="package-card-image"
-                             src="assets/coorg.jpg"
-                             alt="Green hills and plantations in Coorg"
-                             loading="lazy"
-                             width="640"
-                             height="400">
+                        <h3>Dharmasthala and Kukke Tour</h3>
 
-                        <div class="package-card-content">
-                            <h3>Coorg Hill Station Tour</h3>
-                            <p>
-                                Enjoy the coffee-growing region of Coorg with
-                                its green landscapes, viewpoints and relaxed
-                                hill-station atmosphere.
-                            </p>
-                            <ul class="package-highlights">
-                                <li>Scenic hill routes</li>
-                                <li>Nature and sightseeing stops</li>
-                                <li>Multi-day trip options</li>
-                            </ul>
-                            <div class="package-actions">
-                                <a class="package-btn package-btn-primary"
-                                   href="https://wa.me/918296989556?text=Hello%2C%20I%20would%20like%20to%20plan%20a%20Coorg%20tour%20from%20Mangalore.">
-                                    Enquire on WhatsApp
-                                </a>
-                            </div>
-                        </div>
-                    </article>
+                        <p>
+                            Visit Sri Manjunatha Temple at Dharmasthala
+                            and Kukke Subrahmanya Temple.
+                        </p>
 
-                    <article class="package-card">
-                        <img class="package-card-image"
-                             src="assets/chikkamagaluru.jpg"
-                             alt="Mountain scenery in Chikkamagaluru"
-                             loading="lazy"
-                             width="640"
-                             height="400">
+                        <span class="package-link">
+                            Explore Package →
+                        </span>
+                    </a>
 
-                        <div class="package-card-content">
-                            <h3>Chikkamagaluru Tour</h3>
-                            <p>
-                                Explore misty hills, coffee estates and scenic
-                                viewpoints in the Chikkamagaluru region.
-                            </p>
-                            <ul class="package-highlights">
-                                <li>Nature and mountain scenery</li>
-                                <li>Viewpoints subject to access</li>
-                                <li>Weekend and multi-day plans</li>
-                            </ul>
-                            <div class="package-actions">
-                                <a class="package-btn package-btn-primary"
-                                   href="https://wa.me/918296989556?text=Hello%2C%20I%20would%20like%20to%20enquire%20about%20a%20Chikkamagaluru%20tour.">
-                                    Enquire on WhatsApp
-                                </a>
-                            </div>
-                        </div>
-                    </article>
+                    <!-- PACKAGE 4 -->
+                    <a class="package-card"
+                       href="packages/udupi-murudeshwar-tour.html">
 
-                    <article class="package-card">
-                        <img class="package-card-image"
-                             src="assets/mysore.jpg"
-                             alt="Mysore Palace heritage attraction"
-                             loading="lazy"
-                             width="640"
-                             height="400">
+                        <span class="package-number">04</span>
 
-                        <div class="package-card-content">
-                            <h3>Mysore Heritage Tour</h3>
-                            <p>
-                                Plan a heritage journey to Mysore and discover
-                                its palace, cultural attractions and historic
-                                landmarks.
-                            </p>
-                            <ul class="package-highlights">
-                                <li>Mysore Palace</li>
-                                <li>Heritage sightseeing</li>
-                                <li>Itinerary planned to your needs</li>
-                            </ul>
-                            <div class="package-actions">
-                                <a class="package-btn package-btn-primary"
-                                   href="https://wa.me/918296989556?text=Hello%2C%20I%20would%20like%20to%20enquire%20about%20a%20Mysore%20heritage%20tour.">
-                                    Enquire on WhatsApp
-                                </a>
-                            </div>
-                        </div>
-                    </article>
+                        <h3>Udupi and Murudeshwar Tour</h3>
+
+                        <p>
+                            Combine temple visits, coastal sightseeing
+                            and scenic destinations on one trip.
+                        </p>
+
+                        <span class="package-link">
+                            Explore Package →
+                        </span>
+                    </a>
+
+                    <!-- PACKAGE 5 -->
+                    <a class="package-card"
+                       href="packages/kollur-temple-tour.html">
+
+                        <span class="package-number">05</span>
+
+                        <h3>Kollur Mookambika Temple Tour</h3>
+
+                        <p>
+                            Plan a convenient pilgrimage to Sri
+                            Mookambika Temple at Kollur.
+                        </p>
+
+                        <span class="package-link">
+                            Explore Package →
+                        </span>
+                    </a>
+
+                    <!-- PACKAGE 6 -->
+                    <a class="package-card"
+                       href="packages/gokarna-tour.html">
+
+                        <span class="package-number">06</span>
+
+                        <h3>Gokarna Tour Package</h3>
+
+                        <p>
+                            Discover famous temples, relaxing beaches
+                            and the natural beauty of the coastline.
+                        </p>
+
+                        <span class="package-link">
+                            Explore Package →
+                        </span>
+                    </a>
+
+                    <!-- PACKAGE 7 -->
+                    <a class="package-card"
+                       href="packages/coorg-tour.html">
+
+                        <span class="package-number">07</span>
+
+                        <h3>Coorg Hill Station Tour</h3>
+
+                        <p>
+                            Explore coffee estates, green landscapes,
+                            waterfalls and popular hill destinations.
+                        </p>
+
+                        <span class="package-link">
+                            Explore Package →
+                        </span>
+                    </a>
+
+                    <!-- PACKAGE 8 -->
+                    <a class="package-card"
+                       href="packages/chikkamagaluru-tour.html">
+
+                        <span class="package-number">08</span>
+
+                        <h3>Chikkamagaluru Tour</h3>
+
+                        <p>
+                            Enjoy mountain scenery, coffee plantations
+                            and beautiful nature viewpoints.
+                        </p>
+
+                        <span class="package-link">
+                            Explore Package →
+                        </span>
+                    </a>
+
+                    <!-- PACKAGE 9 -->
+                    <a class="package-card"
+                       href="packages/mysore-heritage-tour.html">
+
+                        <span class="package-number">09</span>
+
+                        <h3>Mysore Heritage Tour</h3>
+
+                        <p>
+                            Visit Mysore Palace and explore the city's
+                            heritage, architecture and cultural landmarks.
+                        </p>
+
+                        <span class="package-link">
+                            Explore Package →
+                        </span>
+                    </a>
+
+                    <!-- PACKAGE 10 -->
+                    <a class="package-card"
+                       href="packages/family-karnataka-tour.html">
+
+                        <span class="package-number">10</span>
+
+                        <h3>Family Karnataka Tour</h3>
+
+                        <p>
+                            Plan a flexible holiday with sightseeing
+                            and destinations suited to your family.
+                        </p>
+
+                        <span class="package-link">
+                            Explore Package →
+                        </span>
+                    </a>
 
                 </div>
-
-                <div class="package-note">
-                    <strong>Planning your own route?</strong>
-                    These are suggested tour ideas, not fixed-price packages.
-                    Share your pickup location, travel dates, destinations,
-                    number of passengers and preferred vehicle with us to
-                    discuss availability and a quotation. Temple timings,
-                    attraction access, parking and travel conditions may vary.
-                </div>
-
             </div>
         </section>
 
-        <!-- Enquiry CTA -->
-        <section class="package-cta">
-            <h2>Let's Plan Your Next Journey</h2>
-            <p>
-                Tell us where you want to go, how long you plan to travel and
-                how many people are travelling. Contact Shree Sharada Taxi
-                Service to discuss your taxi tour arrangements from Mangalore.
-            </p>
+        <!-- TOUR PLANNING SECTION -->
+        <section class="section section-light">
+            <div class="container">
 
-            <div class="hero-actions">
-                <a class="package-btn"
-                   style="background:#f4c75b;color:#102d50;"
-                   href="https://wa.me/918296989556?text=Hello%2C%20please%20help%20me%20plan%20a%20taxi%20tour%20from%20Mangalore."
-                   target="_blank"
-                   rel="noopener noreferrer">
-                    Send Tour Enquiry
-                </a>
+                <div class="section-heading">
+                    <span class="eyebrow">PLAN YOUR JOURNEY</span>
 
-                <a class="package-btn"
-                   style="background:#fff;color:#102d50;"
-                   href="tel:+918296989556">
-                    Call +91 8296989556
-                </a>
+                    <h2>A Tour That Fits Your Travel Plans</h2>
+
+                    <p>
+                        Tell us where you want to go, how many people
+                        are travelling and your preferred travel dates.
+                        We can discuss a suitable itinerary and vehicle.
+                    </p>
+                </div>
+
+                <div class="services-grid">
+
+                    <div class="service-card">
+                        <h3>Temple and Pilgrimage Tours</h3>
+
+                        <p>
+                            Plan visits to important temples and
+                            pilgrimage destinations around Karnataka.
+                        </p>
+                    </div>
+
+                    <div class="service-card">
+                        <h3>Nature and Hill Station Tours</h3>
+
+                        <p>
+                            Discover scenic landscapes, waterfalls,
+                            coffee estates and mountain destinations.
+                        </p>
+                    </div>
+
+                    <div class="service-card">
+                        <h3>Family Sightseeing Trips</h3>
+
+                        <p>
+                            Discuss your sightseeing preferences,
+                            travel schedule and vehicle requirements.
+                        </p>
+                    </div>
+
+                </div>
             </div>
         </section>
+
+        <!-- HOW TO ENQUIRE -->
+        <section class="section">
+            <div class="container">
+
+                <div class="section-heading">
+                    <span class="eyebrow">EASY TRIP PLANNING</span>
+
+                    <h2>How to Enquire About a Tour</h2>
+
+                    <p>
+                        Contact us with a few details so we can
+                        understand your travel requirements.
+                    </p>
+                </div>
+
+                <div class="services-grid">
+
+                    <div class="service-card">
+                        <h3>01. Choose a Package</h3>
+
+                        <p>
+                            Select the tour that best matches
+                            your preferred destinations.
+                        </p>
+                    </div>
+
+                    <div class="service-card">
+                        <h3>02. Share Your Details</h3>
+
+                        <p>
+                            Tell us your travel dates, pickup location,
+                            number of passengers and planned stops.
+                        </p>
+                    </div>
+
+                    <div class="service-card">
+                        <h3>03. Discuss Your Trip</h3>
+
+                        <p>
+                            Contact our team to discuss vehicle
+                            availability, itinerary and pricing.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- CALL TO ACTION -->
+        <section class="cta-section">
+            <div class="container">
+
+                <h2>Ready to Plan Your Karnataka Tour?</h2>
+
+                <p>
+                    Contact Shree Sharada Taxi Service to discuss
+                    your destinations, itinerary and travel needs.
+                </p>
+
+                <div class="hero-actions">
+
+                    <a href="tel:+918296989556"
+                       class="btn btn-primary">
+                        Call +91 82969 89556
+                    </a>
+
+                    <a href="https://wa.me/918296989556?text=Hello%2C%20I%20would%20like%20to%20plan%20a%20tour%20from%20Mangalore."
+                       class="btn btn-secondary"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        Plan on WhatsApp
+                    </a>
+
+                </div>
+            </div>
+        </section>
+
     </main>
 
-    <!-- Footer -->
+    <!-- FOOTER -->
     <footer class="site-footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-about">
-                    <a href="index.html" aria-label="Shree Sharada Taxi Service Home">
-                        <img src="assets/logo.png"
-                             alt="Shree Sharada Taxi Service"
-                             width="160"
-                             height="65"
-                             loading="lazy">
-                    </a>
-                    <p>
-                        Comfortable taxi travel from Mangalore for local
-                        journeys, airport transfers, family trips and
-                        customized Karnataka tours.
-                    </p>
-                </div>
+        <div class="container footer-grid">
 
-                <div class="footer-links">
-                    <h3>Quick Links</h3>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="services.html">Our Services</a></li>
-                        <li><a href="fleet.html">Our Fleet</a></li>
-                        <li><a href="packages.html">Tour Packages</a></li>
-                        <li><a href="routes.html">Popular Routes</a></li>
-                        <li><a href="contact.html">Contact Us</a></li>
-                    </ul>
-                </div>
+            <div class="footer-brand">
 
-                <div class="footer-contact">
-                    <h3>Contact Us</h3>
-                    <p>Mangalore, Karnataka, India</p>
-                    <p>
-                        <a href="tel:+918296989556">+91 8296989556</a>
-                    </p>
-                    <p>
-                        <a href="https://wa.me/918296989556"
-                           target="_blank"
-                           rel="noopener noreferrer">Chat on WhatsApp</a>
-                    </p>
-                    <a class="footer-cta"
-                       href="https://wa.me/918296989556?text=Hello%2C%20I%20would%20like%20to%20enquire%20about%20taxi%20services."
-                       target="_blank"
-                       rel="noopener noreferrer">Book Your Taxi</a>
-                </div>
+                <img src="assets/logo.png"
+                     alt="Shree Sharada Taxi Service logo"
+                     loading="lazy">
+
+                <h3>Shree Sharada Taxi Service</h3>
+
+                <p>
+                    Your travel partner in Mangalore, Karnataka.
+                </p>
+
             </div>
 
-            <div class="footer-bottom">
+            <div>
+                <h3>Quick Links</h3>
+
+                <a href="about.html">About Us</a>
+                <a href="services.html">Taxi Services</a>
+                <a href="fleet.html">Our Fleet</a>
+                <a href="packages.html">Tour Packages</a>
+                <a href="routes.html">Popular Routes</a>
+                <a href="contact.html">Contact</a>
+            </div>
+
+            <div>
+                <h3>Contact Us</h3>
+
+                <p>Mangalore, Karnataka, India</p>
+
+                <a href="tel:+918296989556">
+                    Call: +91 82969 89556
+                </a>
+
+                <a href="https://wa.me/918296989556"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    WhatsApp Enquiry
+                </a>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container">
                 <p>
-                    &copy; <span id="current-year">2026</span>
+                    © <span data-year></span>
                     Shree Sharada Taxi Service. All rights reserved.
                 </p>
-                <p>Taxi Service in Mangalore, Karnataka</p>
             </div>
         </div>
     </footer>
 
-    <script>
-        const yearElement = document.getElementById("current-year");
-        if (yearElement) {
-            yearElement.textContent = new Date().getFullYear();
-        }
-    </script>
+    <!-- FLOATING WHATSAPP BUTTON -->
+    <a class="floating-whatsapp"
+       href="https://wa.me/918296989556?text=Hello%2C%20I%20need%20taxi%20service."
+       target="_blank"
+       rel="noopener noreferrer"
+       aria-label="Contact Shree Sharada Taxi Service on WhatsApp">
+        WhatsApp
+    </a>
+
+    <script src="script.js"></script>
 
 </body>
 </html>
