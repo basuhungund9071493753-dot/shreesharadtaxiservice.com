@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Popular Taxi Routes from Mangalore | Shree Sharada Taxi Service</title>
+
+    <meta name="description" content="Explore popular taxi routes from Mangalore to Udupi, Dharmasthala, Kukke Subrahmanya, Coorg, Mysore, Gokarna and other Karnataka destinations with Shree Sharada Taxi Service.">
+
+    <meta name="keywords" content="taxi routes from Mangalore, Mangalore to Udupi taxi, Mangalore to Dharmasthala taxi, Mangalore to Coorg taxi, Mangalore outstation taxi, Karnataka taxi service">
+
+    <meta name="author" content="Shree Sharada Taxi Service">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#0757a8">
+
+    <link rel="canonical" href="https://shreesharadataxiservice.com/routes.html">
+    <link rel="icon" href="assets/logo.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Popular Taxi Routes from Mangalore | Shree Sharada Taxi Service">
+    <meta property="og:description" content="Plan comfortable taxi journeys from Mangalore to popular temple towns, beaches, hill stations and cities across Karnataka.">
+    <meta property="og:url" content="https://shreesharadataxiservice.com/routes.html">
+    <meta property="og:image" content="https://shreesharadataxiservice.com/assets/logo.png">
+
+    <script src="script.js" defer></script>
+
+    <style>
+        .routes-hero {
+            padding: 80px 20px;
+            color: #fff;
+            text-align: center;
+            background: linear-gradient(135deg, #06366c, #0757a8, #102d50);
+        }
+
+        .routes-hero .eyebrow {
+            color: #f4c75b;
+            font-weight: 700;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        .routes-hero h1 {
+            max-width: 900px;
+            margin: 16px auto;
+            font-size: clamp(2rem, 5vw, 3.4rem);
+            line-height: 1.2;
+        }
+
+        .routes-hero p {
+            max-width: 760px;
+            margin: 0 auto 26px;
+            line-height: 1.8;
+        }
+
+        .routes-hero-actions {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .routes-button {
+            display: inline-block;
+            padding: 13px 22px;
+            border-radius: 7px;
+            font-weight: 700;
+            text-decoration: none;
+            transition: transform .2s ease;
+        }
+
+        .routes-button:hover {
+            transform: translateY(-2px);
+        }
+
+        .routes-button-gold {
+            color: #102d50;
+            background: #f4c75b;
+        }
+
+        .routes-button-outline {
+            color: #fff;
+            border: 1px solid #fff;
+        }
+
+        .routes-section {
+            padding: 65px 20px;
+        }
+
+        .routes-container {
+            width: min(1180px, 100%);
+            margin: 0 auto;
+        }
+
+        .routes-heading {
+            max-width: 760px;
+            margin: 0 auto 36px;
+            text-align: center;
+        }
+
+        .routes-heading span {
+            color: #a77c1b;
+            font-weight: 700;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+        }
+
+        .routes-heading h2 {
+            margin: 12px 0;
+            color: #102d50;
+            font-size: clamp(1.8rem, 4vw, 2.6rem);
+        }
+
+        .routes-heading p {
+            line-height: 1.8;
+        }
+
+        .routes-grid {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 22px;
+        }
+
+        .route-card {
+            display: flex;
+            flex-direction: column;
+            padding: 25px;
+            background: #fff;
+            border: 1px solid #e2e9f2;
+            border-radius: 12px;
+            box-shadow: 0 7px 24px rgba(16, 45, 80, .07);
+            transition: transform .2s ease, box-shadow .2s ease;
+        }
+
+        .route-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 30px rgba(16, 45, 80, .12);
+        }
+
+        .route-icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 48px;
+            height: 48px;
+            margin-bottom: 18px;
+            color: #0757a8;
+            background: #edf5ff;
+            border: 1px solid #d9e9fb;
+            border-radius: 10px;
+            font-size: 24px;
+        }
+
+        .route-card h3 {
+            margin: 0 0 10px;
+            color: #102d50;
+            font-size: 1.2rem;
+        }
+
+        .route-card p {
+            margin: 0 0 20px;
+            line-height: 1.75;
+        }
+
+        .route-enquiry {
+            display: inline-block;
+            margin-top: auto;
+            padding: 11px 14px;
+            color: #fff;
+            background: #0757a8;
+            border-radius: 6px;
+            text-align: center;
+            text-decoration: none;
+            font-weight: 700;
+        }
+
+        .route-enquiry:hover {
+            background: #06366c;
+        }
+
+        .routes-note {
+            margin-top: 32px;
+            padding: 22px;
+            background: #f5f8fc;
+            border-left: 4px solid #d5a52d;
+            border-radius: 6px;
+            line-height: 1.8;
+        }
+
+        .routes-cta {
+            padding: 55px 20px;
+            color: #fff;
+            background: #102d50;
+            text-align: center;
+        }
+
+        .routes-cta h2 {
+            margin-top: 0;
+            font-size: clamp(1.7rem, 4vw, 2.4rem);
+        }
+
+        .routes-cta p {
+            max-width: 740px;
+            margin: 0 auto 25px;
+            line-height: 1.8;
+        }
+
+        @media (max-width: 900px) {
+            .routes-grid {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+        }
+
+        @media (max-width: 600px) {
+            .routes-hero {
+                padding: 55px 18px;
+            }
+
+            .routes-section {
+                padding: 45px 16px;
+            }
+
+            .routes-grid {
+                grid-template-columns: 1fr;
+                gap: 18px;
+            }
+
+            .route-card {
+                padding: 21px;
+            }
+
+            .route-enquiry {
+                width: 100%;
+                box-sizing: border-box;
+            }
+        }
+    </style>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "TaxiService",
+      "name": "Shree Sharada Taxi Service",
+      "url": "https://shreesharadataxiservice.com/",
+      "logo": "https://shreesharadataxiservice.com/assets/logo.png",
+      "telephone": "+918296989556",
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Mangalore"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Dakshina Kannada"
+        },
+        {
+          "@type": "State",
+          "name": "Karnataka"
+        }
+      ],
+      "description": "Taxi travel from Mangalore to popular destinations throughout Karnataka."
+    }
+    </script>
+</head>
+
+<body>
+
+<header class="site-header">
+    <div class="container">
+
+        <a href="index.html" class="logo" aria-label="Shree Sharada Taxi Service Home">
+            <img src="assets/logo.png"
+                 alt="Shree Sharada Taxi Service logo"
+                 width="180"
+                 height="70">
+        </a>
+
+        <button class="menu-toggle"
+                type="button"
+                aria-label="Toggle navigation"
+                aria-expanded="false"
+                aria-controls="primary-navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <nav class="main-nav" id="primary-navigation" aria-label="Main navigation">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="fleet.html">Our Fleet</a>
+            <a href="packages.html">Tour Packages</a>
+            <a href="routes.html" class="active" aria-current="page">Popular Routes</a>
+            <a href="contact.html">Contact</a>
+            <a href="https://wa.me/918296989556?text=Hello%2C%20I%20would%20like%20to%20enquire%20about%20a%20taxi%20route."
+               class="nav-cta"
+               target="_blank"
+               rel="noopener noreferrer">Enquire Now</a>
+        </nav>
+
+    </div>
+</header>
+
+<main>
+
+    <section class="routes-hero">
+        <span class="eyebrow">Your Journey Starts Here</span>
+
+        <h1>Popular Taxi Routes from Mangalore</h1>
+
+        <p>
+            Planning a temple visit, a family trip, a coastal holiday or a
+            journey to the hills? Explore popular destinations from Mangalore
+            and contact Shree Sharada Taxi Service to discuss your travel plans.
+        </p>
+
+        <div class="routes-hero-actions">
+            <a class="routes-button routes-button-gold"
+               href="https://wa.me/918296989556?text=Hello%2C%20I%20would%20like%20to%20plan%20a%20taxi%20journey%20from%20Mangalore."
+               target="_blank"
+               rel="noopener noreferrer">Plan Your Journey</a>
+
+            <a class="routes-button routes-button-outline"
+               href="tel:+918296989556">Call +91 82969 89556</a>
+        </div>
+    </section>
+
+    <section class="routes-section">
+        <div class="routes-container">
+
+            <div class="routes-heading">
+                <span>Explore Destinations</span>
+                <h2>Find Your Route</h2>
+                <p>
+                    Choose a destination below to send us a WhatsApp enquiry.
+                    We can discuss your pickup point, travel dates, vehicle
+                    requirements and return arrangements.
+                </p>
+            </div>
+
+            <div class="routes-grid">
+
+                <article class="route-card">
+                    <div class="route-icon" aria-hidden="true">🛕</div>
+                    <h3>Mangalore to Dharmasthala</h3>
+                    <p>
+                        Plan a pilgrimage to Shri Manjunatha Temple and
+                        nearby attractions.
+                    </p>
+                    <a class="route-enquiry"
+                       href="https://wa.me/918296989556?text=Hello%2C%20I%20need%20a%20taxi%20from%20Mangalore%20to%20Dharmasthala."
+                       target="_blank" rel="noopener noreferrer">Enquire About This Route</a>
+                </article>
+
+                <article class="route-card">
+                    <div class="route-icon" aria-hidden="true">🙏</div>
+                    <h3>Mangalore to Kukke Subrahmanya</h3>
+                    <p>
+                        Arrange a comfortable temple visit to Kukke Subrahmanya
+                        in the Western Ghats region.
+                    </p>
+                    <a class="route-enquiry"
+                       href="https://wa.me/918296989556?text=Hello%2C%20I%20need%20a%20taxi%20from%20Mangalore%20to%20Kukke%20Subrahmanya."
+                       target="_blank" rel="noopener noreferrer">Enquire About This Route</a>
+                </article>
+
+                <article class="route-card">
+                    <div class="route-icon" aria-hidden="true">🌊</div>
+                    <h3>Mangalore to Udupi</h3>
+                    <p>
+                        Travel to Udupi for Sri Krishna Matha, local attractions
+                        and coastal sightseeing.
+                    </p>
+                    <a class="route-enquiry"
+                       href="https://wa.me/918296989556?text=Hello%2C%20I%20need%20a%20taxi%20from%20Mangalore%20to%20Udupi."
+                       target="_blank" rel="noopener noreferrer">Enquire About This Route</a>
+                </article>
+
+                <article class="route-card">
+                    <div class="route-icon" aria-hidden="true">🏖️</div>
+                    <h3>Mangalore to Gokarna</h3>
+                    <p>
+                        Plan a coastal trip to Gokarna for beaches, scenic
+                        viewpoints and temple visits.
+                    </p>
+                    <a class="route-enquiry"
+                       href="https://wa.me/918296989556?text=Hello%2C%20I%20need%20a%20taxi%20from%20Mangalore%20to%20Gokarna."
+                       target="_blank" rel="noopener noreferrer">Enquire About This Route</a>
+                </article>
+
+                <article class="route-card">
+                    <div class="route-icon" aria-hidden="true">🌅</div>
+                    <h3>Mangalore to Murudeshwara</h3>
+                    <p>
+                        Visit the famous Shiva statue, temple and scenic
+                        coastline at Murudeshwara.
+                    </p>
+                    <a class="route-enquiry"
+                       href="https://wa.me/918296989556?text=Hello%2C%20I%20need%20a%20taxi%20from%20Mangalore%20to%20Murudeshwara."
+                       target="_blank" rel="noopener noreferrer">Enquire About This Route</a>
+                </article>
+
+                <article class="route-card">
+                    <div class="route-icon" aria-hidden="true">🌿</div>
+                    <h3>Mangalore to Coorg</h3>
+                    <p>
+                        Enjoy a hill-station holiday among coffee estates,
+                        green landscapes and viewpoints.
+                    </p>
+                    <a class="route-enquiry"
+                       href="https://wa.me/918296989556?text=Hello%2C%20I%20need%20a%20taxi%20from%20Mangalore%20to%20Coorg."
+                       target="_blank" rel="noopener noreferrer">Enquire About This Route</a>
+                </article>
+
+                <article class="route-card">
+                    <div class="route-icon" aria-hidden="true">⛰️</div>
+                    <h3>Mangalore to Chikkamagaluru</h3>
+                    <p>
+                        Plan a scenic journey to coffee country, mountain
+                        viewpoints and nature destinations.
+                    </p>
+                    <a class="route-enquiry"
+                       href="https://wa.me/918296989556?text=Hello%2C%20I%20need%20a%20taxi%20from%20Mangalore%20to%20Chikkamagaluru."
+                       target="_blank" rel="noopener noreferrer">Enquire About This Route</a>
+                </article>
+
+                <article class="route-card">
+                    <div class="route-icon" aria-hidden="true">🏛️</div>
+                    <h3>Mangalore to Mysore</h3>
+                    <p>
+                        Explore Mysore Palace, heritage landmarks and cultural
+                        attractions on a planned trip.
+                    </p>
+                    <a class="route-enquiry"
+                       href="https://wa.me/918296989556?text=Hello%2C%20I%20need%20a%20taxi%20from%20Mangalore%20to%20Mysore."
+                       target="_blank" rel="noopener noreferrer">Enquire About This Route</a>
+                </article>
+
+                <article class="route-card">
+                    <div class="route-icon" aria-hidden="true">🌴</div>
+                    <h3>Mangalore Local Sightseeing</h3>
+                    <p>
+                        Discover local beaches, temples, markets and other
+                        attractions around Mangalore.
+                    </p>
+                    <a class="route-enquiry"
+                       href="https://wa.me/918296989556?text=Hello%2C%20I%20need%20a%20taxi%20for%20local%20sightseeing%20in%20Mangalore."
+                       target="_blank" rel="noopener noreferrer">Enquire About This Route</a>
+                </article>
+
+                <article class="route-card">
+                    <div class="route-icon" aria-hidden="true">⛪</div>
+                    <h3>Mangalore to Belur and Halebidu</h3>
+                    <p>
+                        Discover historic Hoysala temples and remarkable
+                        stone carvings on a heritage trip.
+                    </p>
+                    <a class="route-enquiry"
+                       href="https://wa.me/918296989556?text=Hello%2C%20I%20need%20a%20taxi%20from%20Mangalore%20to%20Belur%20and%20Halebidu."
+                       target="_blank" rel="noopener noreferrer">Enquire About This Route</a>
+                </article>
+
+                <article class="route-card">
+                    <div class="route-icon" aria-hidden="true">🌳</div>
+                    <h3>Mangalore to Wayanad</h3>
+                    <p>
+                        Organize a nature-focused journey to Wayanad's green
+                        hills and scenic attractions in Kerala.
+                    </p>
+                    <a class="route-enquiry"
+                       href="https://wa.me/918296989556?text=Hello%2C%20I%20need%20a%20taxi%20from%20Mangalore%20to%20Wayanad."
+                       target="_blank" rel="noopener noreferrer">Enquire About This Route</a>
+                </article>
+
+                <article class="route-card">
+                    <div class="route-icon" aria-hidden="true">🚗</div>
+                    <h3>Mangalore to Goa</h3>
+                    <p>
+                        Plan a trip to Goa for beaches, heritage areas and
+                        popular holiday destinations.
+                    </p>
+                    <a class="route-enquiry"
+                       href="https://wa.me/918296989556?text=Hello%2C%20I%20need%20a%20taxi%20from%20Mangalore%20to%20Goa."
+                       target="_blank" rel="noopener noreferrer">Enquire About This Route</a>
+                </article>
+
+            </div>
+
+            <div class="routes-note">
+                <strong>Need a different destination?</strong>
+                Contact us to discuss other routes, temple visits, family
+                holidays and multi-day Karnataka tours. Travel time, vehicle
+                availability and quotations depend on your itinerary and dates.
+            </div>
+
+        </div>
+    </section>
+
+    <section class="routes-cta">
+        <h2>Request Your Taxi Travel Quote</h2>
+        <p>
+            Send your destination, pickup location, travel dates, passenger
+            count and preferred vehicle. Our team can discuss the available
+            arrangements with you.
+        </p>
+
+        <div class="routes-hero-actions">
+            <a class="routes-button routes-button-gold"
+               href="https://wa.me/918296989556?text=Hello%2C%20please%20provide%20a%20taxi%20quotation%20for%20my%20journey."
+               target="_blank"
+               rel="noopener noreferrer">WhatsApp for a Quote</a>
+
+            <a class="routes-button routes-button-outline"
+               href="tel:+918296989556">Call Us</a>
+        </div>
+    </section>
+
+</main>
+
+<footer class="site-footer">
+    <div class="container footer-grid">
+
+        <div class="footer-brand">
+            <a href="index.html" aria-label="Shree Sharada Taxi Service Home">
+                <img src="assets/logo.png"
+                     alt="Shree Sharada Taxi Service logo"
+                     loading="lazy">
+            </a>
+            <h3>Shree Sharada Taxi Service</h3>
+            <p>Your travel partner in Mangalore, Karnataka.</p>
+        </div>
+
+        <div class="footer-links">
+            <h3>Quick Links</h3>
+            <a href="about.html">About Us</a>
+            <a href="services.html">Taxi Services</a>
+            <a href="fleet.html">Our Fleet</a>
+            <a href="packages.html">Tour Packages</a>
+            <a href="routes.html">Popular Routes</a>
+            <a href="contact.html">Contact</a>
+        </div>
+
+        <div class="footer-contact">
+            <h3>Contact Us</h3>
+            <p>Mangalore, Karnataka, India</p>
+            <p><a href="tel:+918296989556">Call: +91 82969 89556</a></p>
+            <a href="https://wa.me/918296989556"
+               target="_blank"
+               rel="noopener noreferrer">WhatsApp Enquiry</a>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <div class="container">
+            <p>
+                &copy; <span data-year></span>
+                Shree Sharada Taxi Service. All rights reserved.
+            </p>
+        </div>
+    </div>
+</footer>
+
+<a class="floating-whatsapp"
+   href="https://wa.me/918296989556?text=Hello%2C%20I%20need%20taxi%20service."
+   target="_blank"
+   rel="noopener noreferrer"
+   aria-label="Contact us on WhatsApp">WhatsApp</a>
+
+</body>
+</html>
+```
