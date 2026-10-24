@@ -5,18 +5,577 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Popular Taxi Routes from Mangalore | Shree Sharada Taxi Service</title>
-
-    <meta name="description" content="Book comfortable taxi travel from Mangalore to Udupi, Dharmasthala, Kukke Subrahmanya, Kollur, Murudeshwar, Gokarna, Goa, Coorg, Chikkamagaluru and Mysore.">
-
+    <meta name="description" content="Explore popular taxi routes from Mangalore to Udupi, Dharmasthala, Kukke Subrahmanya, Kollur, Murudeshwar, Gokarna, Goa, Coorg, Chikkamagaluru and Mysore.">
     <meta name="robots" content="index, follow">
     <meta name="theme-color" content="#0757a8">
     <link rel="canonical" href="https://shreesharadataxiservice.com/routes.html">
-    <link rel="stylesheet" href="style.css">
 
-    <meta property="og:title" content="Popular Taxi Routes from Mangalore">
-    <meta property="og:description" content="Explore popular routes from Mangalore with Shree Sharada Taxi Service. Contact us for your travel plans.">
+    <meta property="og:title" content="Popular Taxi Routes from Mangalore | Shree Sharada Taxi Service">
+    <meta property="og:description" content="Explore popular destinations from Mangalore and enquire about comfortable taxi travel.">
     <meta property="og:url" content="https://shreesharadataxiservice.com/routes.html">
     <meta property="og:type" content="website">
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        /* =====================================
+           ROUTES PAGE - LOCAL STYLES
+           ===================================== */
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            overflow-x: hidden;
+        }
+
+        img {
+            max-width: 100%;
+        }
+
+        /* HEADER SIZE FIX */
+        header.site-header {
+            position: relative;
+            z-index: 1000;
+            width: 100%;
+            height: auto;
+            min-height: 0;
+        }
+
+        .site-header .header-inner {
+            width: 100%;
+            max-width: 1200px;
+            min-height: 78px;
+            height: auto;
+            margin: 0 auto;
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        .site-header .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            flex: 0 1 auto;
+            min-width: 0;
+            text-decoration: none;
+        }
+
+        .site-header .logo img {
+            display: block;
+            width: 58px;
+            min-width: 58px;
+            max-width: 58px;
+            height: 58px;
+            max-height: 58px;
+            object-fit: contain;
+        }
+
+        .site-header .logo span {
+            font-size: 17px;
+            line-height: 1.3;
+            font-weight: 700;
+            max-width: 230px;
+        }
+
+        .site-header .main-nav {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            flex-wrap: wrap;
+            gap: 6px;
+        }
+
+        .site-header .main-nav a {
+            display: inline-block;
+            padding: 10px 9px;
+            font-size: 14px;
+            line-height: 1.3;
+            white-space: nowrap;
+        }
+
+        .site-header .menu-toggle {
+            display: none;
+            flex-shrink: 0;
+            font-size: 23px;
+            padding: 7px 12px;
+            cursor: pointer;
+        }
+
+        /* HERO */
+        .routes-hero {
+            position: relative;
+            padding: 76px 20px;
+            color: #ffffff;
+            background:
+                linear-gradient(110deg, rgba(4, 32, 65, .94), rgba(7, 87, 168, .80)),
+                url("https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1800&q=85")
+                center 55% / cover no-repeat;
+        }
+
+        .routes-hero-inner {
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .routes-hero .eyebrow,
+        .routes-section .eyebrow {
+            display: inline-block;
+            margin-bottom: 12px;
+            font-size: 12px;
+            font-weight: 800;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        .routes-hero h1 {
+            max-width: 850px;
+            margin: 0 0 18px;
+            color: #ffffff;
+            font-size: clamp(32px, 5vw, 54px);
+            line-height: 1.12;
+        }
+
+        .routes-hero p {
+            max-width: 720px;
+            margin: 0;
+            color: #f0f5ff;
+            font-size: 17px;
+            line-height: 1.8;
+        }
+
+        .routes-actions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-top: 28px;
+        }
+
+        .routes-actions .btn {
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 46px;
+            padding: 12px 22px;
+            border-radius: 5px;
+            font-size: 14px;
+            font-weight: 700;
+            text-decoration: none;
+            transition: transform .2s ease, opacity .2s ease;
+        }
+
+        .routes-actions .btn:hover {
+            transform: translateY(-2px);
+            opacity: .92;
+        }
+
+        .routes-actions .btn-call {
+            background: #ffffff;
+            color: #0757a8;
+        }
+
+        .routes-actions .btn-whatsapp {
+            background: #16834a;
+            color: #ffffff;
+        }
+
+        /* ROUTE SECTION */
+        .routes-section {
+            padding: 70px 20px;
+            background: #ffffff;
+        }
+
+        .routes-container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .routes-heading {
+            max-width: 760px;
+            margin: 0 auto 38px;
+            text-align: center;
+        }
+
+        .routes-heading .eyebrow {
+            color: #0757a8;
+        }
+
+        .routes-heading h2 {
+            margin: 0 0 14px;
+            color: #122b46;
+            font-size: clamp(27px, 3.5vw, 38px);
+            line-height: 1.25;
+        }
+
+        .routes-heading p {
+            margin: 0;
+            color: #637184;
+            font-size: 16px;
+            line-height: 1.8;
+        }
+
+        /* ROUTE CARD GRID */
+        .route-grid {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 25px;
+            align-items: stretch;
+        }
+
+        .route-card {
+            display: flex;
+            flex-direction: column;
+            min-width: 0;
+            overflow: hidden;
+            background: #ffffff;
+            border: 1px solid #e2eaf3;
+            border-radius: 12px;
+            box-shadow: 0 5px 22px rgba(18, 43, 70, .07);
+            color: inherit;
+            text-decoration: none;
+            transition: transform .25s ease, box-shadow .25s ease;
+        }
+
+        .route-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 14px 32px rgba(18, 43, 70, .13);
+        }
+
+        .route-image {
+            position: relative;
+            width: 100%;
+            height: 205px;
+            overflow: hidden;
+            background: #e7eef7;
+        }
+
+        .route-image img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            max-width: none;
+            object-fit: cover;
+            transition: transform .4s ease;
+        }
+
+        .route-card:hover .route-image img {
+            transform: scale(1.045);
+        }
+
+        .route-number {
+            position: absolute;
+            top: 14px;
+            left: 14px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 39px;
+            height: 39px;
+            border-radius: 50%;
+            background: #ffffff;
+            color: #0757a8;
+            font-size: 13px;
+            font-weight: 800;
+            box-shadow: 0 3px 12px rgba(0, 0, 0, .13);
+        }
+
+        .route-content {
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+            padding: 22px;
+        }
+
+        .route-content h3 {
+            margin: 0 0 10px;
+            color: #122b46;
+            font-size: 20px;
+            line-height: 1.4;
+        }
+
+        .route-content p {
+            margin: 0 0 18px;
+            color: #637184;
+            font-size: 14px;
+            line-height: 1.75;
+        }
+
+        .route-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            margin-top: auto;
+            padding-top: 12px;
+            color: #0757a8;
+            font-size: 14px;
+            font-weight: 800;
+        }
+
+        /* WHY CHOOSE US */
+        .route-benefits {
+            padding: 70px 20px;
+            background: #f3f7fc;
+        }
+
+        .benefit-grid {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 22px;
+        }
+
+        .benefit-card {
+            padding: 28px 24px;
+            background: #ffffff;
+            border: 1px solid #e2eaf3;
+            border-radius: 10px;
+        }
+
+        .benefit-icon {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 48px;
+            height: 48px;
+            margin-bottom: 17px;
+            border-radius: 10px;
+            background: #e8f2ff;
+            color: #0757a8;
+            font-size: 23px;
+        }
+
+        .benefit-card h3 {
+            margin: 0 0 10px;
+            color: #122b46;
+            font-size: 19px;
+        }
+
+        .benefit-card p {
+            margin: 0;
+            color: #637184;
+            font-size: 14px;
+            line-height: 1.8;
+        }
+
+        /* CTA */
+        .routes-cta {
+            padding: 62px 20px;
+            background: #0757a8;
+            color: #ffffff;
+            text-align: center;
+        }
+
+        .routes-cta-inner {
+            max-width: 850px;
+            margin: 0 auto;
+        }
+
+        .routes-cta h2 {
+            margin: 0 0 15px;
+            color: #ffffff;
+            font-size: clamp(27px, 4vw, 38px);
+            line-height: 1.3;
+        }
+
+        .routes-cta p {
+            margin: 0 auto;
+            max-width: 650px;
+            color: #e8f2ff;
+            font-size: 16px;
+            line-height: 1.8;
+        }
+
+        .routes-cta .btn-call {
+            background: #ffffff;
+            color: #0757a8;
+        }
+
+        .routes-cta .btn-whatsapp {
+            background: #16834a;
+            color: #ffffff;
+        }
+
+        /* FOOTER LOGO SIZE FIX */
+        .site-footer .footer-brand img {
+            display: block;
+            width: 70px;
+            max-width: 70px;
+            height: 70px;
+            max-height: 70px;
+            object-fit: contain;
+            margin-bottom: 14px;
+        }
+
+        .site-footer .footer-grid {
+            align-items: start;
+        }
+
+        /* FLOATING WHATSAPP */
+        .floating-whatsapp {
+            position: fixed;
+            right: 18px;
+            bottom: 18px;
+            z-index: 999;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 13px 19px;
+            border-radius: 30px;
+            background: #16834a;
+            color: #ffffff;
+            font-size: 14px;
+            font-weight: 800;
+            text-decoration: none;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, .18);
+        }
+
+        /* TABLET */
+        @media (max-width: 1000px) {
+            .site-header .header-inner {
+                flex-wrap: wrap;
+            }
+
+            .site-header .main-nav {
+                gap: 2px;
+            }
+
+            .site-header .main-nav a {
+                padding: 9px 7px;
+                font-size: 13px;
+            }
+
+            .route-grid {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+
+            .benefit-grid {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+        }
+
+        /* MOBILE */
+        @media (max-width: 760px) {
+            .site-header .header-inner {
+                min-height: 70px;
+                padding: 9px 15px;
+                flex-wrap: wrap;
+                gap: 10px;
+            }
+
+            .site-header .logo {
+                gap: 9px;
+                max-width: calc(100% - 55px);
+            }
+
+            .site-header .logo img {
+                width: 48px;
+                min-width: 48px;
+                max-width: 48px;
+                height: 48px;
+                max-height: 48px;
+            }
+
+            .site-header .logo span {
+                font-size: 15px;
+                max-width: 190px;
+            }
+
+            .site-header .menu-toggle {
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .site-header .main-nav {
+                display: none;
+                flex-direction: column;
+                align-items: stretch;
+                width: 100%;
+                gap: 0;
+                padding: 8px 0;
+            }
+
+            .site-header .main-nav.active {
+                display: flex;
+            }
+
+            .site-header .main-nav a {
+                display: block;
+                width: 100%;
+                padding: 12px 10px;
+                font-size: 15px;
+                white-space: normal;
+            }
+
+            .routes-hero {
+                padding: 55px 18px;
+            }
+
+            .routes-hero p {
+                font-size: 15px;
+            }
+
+            .routes-section,
+            .route-benefits {
+                padding: 48px 16px;
+            }
+
+            .routes-heading {
+                margin-bottom: 28px;
+            }
+
+            .route-grid {
+                grid-template-columns: minmax(0, 1fr);
+                gap: 20px;
+            }
+
+            .route-image {
+                height: 220px;
+            }
+
+            .route-content {
+                padding: 20px;
+            }
+
+            .benefit-grid {
+                grid-template-columns: minmax(0, 1fr);
+                gap: 16px;
+            }
+
+            .routes-cta {
+                padding: 48px 18px;
+            }
+
+            .routes-actions {
+                flex-direction: column;
+                align-items: stretch;
+            }
+
+            .routes-actions .btn {
+                width: 100%;
+            }
+
+            .floating-whatsapp {
+                right: 12px;
+                bottom: 12px;
+                padding: 11px 15px;
+                font-size: 13px;
+            }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            .route-card,
+            .route-image img,
+            .routes-actions .btn {
+                transition: none;
+            }
+        }
+    </style>
 
     <script type="application/ld+json">
     {
@@ -47,8 +606,7 @@
         <div class="container header-inner">
 
             <a href="index.html" class="logo" aria-label="Shree Sharada Taxi Service Home">
-                <img src="assets/logo.png"
-                     alt="Shree Sharada Taxi Service Logo">
+                <img src="assets/logo.png" alt="Shree Sharada Taxi Service Logo">
                 <span>Shree Sharada Taxi Service</span>
             </a>
 
@@ -75,23 +633,24 @@
 
     <main>
 
-        <!-- PAGE HERO -->
-        <section class="page-hero">
-            <div class="container">
-                <span class="eyebrow">TRAVEL WITH COMFORT</span>
+        <!-- HERO -->
+        <section class="routes-hero">
+            <div class="routes-hero-inner">
+                <span class="eyebrow">Travel with comfort</span>
                 <h1>Popular Taxi Routes from Mangalore</h1>
                 <p>
-                    Planning a temple visit, family holiday, sightseeing trip
-                    or outstation journey? Explore popular destinations and
-                    contact Shree Sharada Taxi Service to plan your travel.
+                    Explore temple towns, beautiful beaches, hill stations
+                    and heritage destinations. Choose your destination and
+                    contact Shree Sharada Taxi Service to discuss your trip.
                 </p>
 
-                <div class="hero-actions">
-                    <a href="tel:+918296989556" class="btn btn-primary">
+                <div class="routes-actions">
+                    <a href="tel:+918296989556" class="btn btn-call">
                         Call Now
                     </a>
+
                     <a href="https://wa.me/918296989556?text=Hello%2C%20I%20would%20like%20to%20enquire%20about%20taxi%20routes%20from%20Mangalore."
-                       class="btn btn-secondary"
+                       class="btn btn-whatsapp"
                        target="_blank"
                        rel="noopener noreferrer">
                         WhatsApp Enquiry
@@ -100,154 +659,183 @@
             </div>
         </section>
 
-        <!-- ROUTES INTRODUCTION -->
-        <section class="section">
-            <div class="container">
+        <!-- ROUTE CARDS -->
+        <section class="routes-section">
+            <div class="routes-container">
 
-                <div class="section-heading">
-                    <span class="eyebrow">EXPLORE DESTINATIONS</span>
+                <div class="routes-heading">
+                    <span class="eyebrow">Explore destinations</span>
                     <h2>Choose Your Destination</h2>
                     <p>
-                        Explore these popular routes from Mangalore.
-                        Open a route to learn more about the destination
-                        and enquire about your taxi journey.
+                        Discover popular journeys starting from Mangalore.
+                        Select a route to explore destination details and
+                        enquire about your travel requirements.
                     </p>
                 </div>
 
-                <!-- TEN CLICKABLE ROUTE CARDS -->
                 <div class="route-grid">
 
-                    <a class="route-card"
-                       href="routes/mangalore-to-udupi.html">
-                        <span class="route-number">01</span>
-                        <h3>Mangalore to Udupi</h3>
-                        <p>
-                            Visit Sri Krishna Matha, Malpe Beach and
-                            nearby coastal attractions.
-                        </p>
-                        <span class="route-link">View Route →</span>
+                    <a class="route-card" href="routes/mangalore-to-udupi.html">
+                        <div class="route-image">
+                            <img src="https://images.unsplash.com/photo-1600100397608-f010e7a1a2f7?auto=format&fit=crop&w=900&q=80"
+                                 alt="Temple architecture in coastal Karnataka"
+                                 loading="lazy">
+                            <span class="route-number">01</span>
+                        </div>
+                        <div class="route-content">
+                            <h3>Mangalore to Udupi</h3>
+                            <p>Visit Sri Krishna Matha, Malpe Beach and nearby coastal attractions.</p>
+                            <span class="route-link">Explore Route →</span>
+                        </div>
                     </a>
 
-                    <a class="route-card"
-                       href="routes/mangalore-to-dharmasthala.html">
-                        <span class="route-number">02</span>
-                        <h3>Mangalore to Dharmasthala</h3>
-                        <p>
-                            Plan a pilgrimage to Sri Manjunatha Temple
-                            and explore the surrounding area.
-                        </p>
-                        <span class="route-link">View Route →</span>
+                    <a class="route-card" href="routes/mangalore-to-dharmasthala.html">
+                        <div class="route-image">
+                            <img src="https://images.unsplash.com/photo-1548013146-72479768bada?auto=format&fit=crop&w=900&q=80"
+                                 alt="Traditional Indian temple architecture"
+                                 loading="lazy">
+                            <span class="route-number">02</span>
+                        </div>
+                        <div class="route-content">
+                            <h3>Mangalore to Dharmasthala</h3>
+                            <p>Plan a pilgrimage to Sri Manjunatha Temple and explore the surrounding area.</p>
+                            <span class="route-link">Explore Route →</span>
+                        </div>
                     </a>
 
-                    <a class="route-card"
-                       href="routes/mangalore-to-kukke-subrahmanya.html">
-                        <span class="route-number">03</span>
-                        <h3>Mangalore to Kukke Subrahmanya</h3>
-                        <p>
-                            Travel to the famous Kukke Subrahmanya Temple
-                            in the Western Ghats.
-                        </p>
-                        <span class="route-link">View Route →</span>
+                    <a class="route-card" href="routes/mangalore-to-kukke-subrahmanya.html">
+                        <div class="route-image">
+                            <img src="https://images.unsplash.com/photo-1606293926075-69a00dbfde81?auto=format&fit=crop&w=900&q=80"
+                                 alt="Ornate Hindu temple and carved pillars"
+                                 loading="lazy">
+                            <span class="route-number">03</span>
+                        </div>
+                        <div class="route-content">
+                            <h3>Mangalore to Kukke Subrahmanya</h3>
+                            <p>Travel to the famous Kukke Subrahmanya Temple near the Western Ghats.</p>
+                            <span class="route-link">Explore Route →</span>
+                        </div>
                     </a>
 
-                    <a class="route-card"
-                       href="routes/mangalore-to-kollur.html">
-                        <span class="route-number">04</span>
-                        <h3>Mangalore to Kollur</h3>
-                        <p>
-                            Arrange a temple trip to Sri Mookambika Temple
-                            at Kollur.
-                        </p>
-                        <span class="route-link">View Route →</span>
+                    <a class="route-card" href="routes/mangalore-to-kollur.html">
+                        <div class="route-image">
+                            <img src="https://images.unsplash.com/photo-1561361513-2d000a50f0dc?auto=format&fit=crop&w=900&q=80"
+                                 alt="Indian temple surrounded by greenery"
+                                 loading="lazy">
+                            <span class="route-number">04</span>
+                        </div>
+                        <div class="route-content">
+                            <h3>Mangalore to Kollur</h3>
+                            <p>Arrange a temple journey to Sri Mookambika Temple at Kollur.</p>
+                            <span class="route-link">Explore Route →</span>
+                        </div>
                     </a>
 
-                    <a class="route-card"
-                       href="routes/mangalore-to-murudeshwar.html">
-                        <span class="route-number">05</span>
-                        <h3>Mangalore to Murudeshwar</h3>
-                        <p>
-                            Explore the famous Shiva statue, temple
-                            and scenic coastline.
-                        </p>
-                        <span class="route-link">View Route →</span>
+                    <a class="route-card" href="routes/mangalore-to-murudeshwar.html">
+                        <div class="route-image">
+                            <img src="https://images.unsplash.com/photo-1473116763249-2faaef81ccda?auto=format&fit=crop&w=900&q=80"
+                                 alt="Scenic sea and coastline"
+                                 loading="lazy">
+                            <span class="route-number">05</span>
+                        </div>
+                        <div class="route-content">
+                            <h3>Mangalore to Murudeshwar</h3>
+                            <p>Explore the famous Shiva statue, temple complex and scenic coastline.</p>
+                            <span class="route-link">Explore Route →</span>
+                        </div>
                     </a>
 
-                    <a class="route-card"
-                       href="routes/mangalore-to-gokarna.html">
-                        <span class="route-number">06</span>
-                        <h3>Mangalore to Gokarna</h3>
-                        <p>
-                            Discover Gokarna's temples, beaches
-                            and coastal scenery.
-                        </p>
-                        <span class="route-link">View Route →</span>
+                    <a class="route-card" href="routes/mangalore-to-gokarna.html">
+                        <div class="route-image">
+                            <img src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21?auto=format&fit=crop&w=900&q=80"
+                                 alt="Waves along a tropical beach"
+                                 loading="lazy">
+                            <span class="route-number">06</span>
+                        </div>
+                        <div class="route-content">
+                            <h3>Mangalore to Gokarna</h3>
+                            <p>Discover Gokarna's temples, beaches and relaxed coastal scenery.</p>
+                            <span class="route-link">Explore Route →</span>
+                        </div>
                     </a>
 
-                    <a class="route-card"
-                       href="routes/mangalore-to-goa.html">
-                        <span class="route-number">07</span>
-                        <h3>Mangalore to Goa</h3>
-                        <p>
-                            Plan a holiday for beach visits, sightseeing
-                            and exploring Goa.
-                        </p>
-                        <span class="route-link">View Route →</span>
+                    <a class="route-card" href="routes/mangalore-to-goa.html">
+                        <div class="route-image">
+                            <img src="https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?auto=format&fit=crop&w=900&q=80"
+                                 alt="Beautiful beach destination"
+                                 loading="lazy">
+                            <span class="route-number">07</span>
+                        </div>
+                        <div class="route-content">
+                            <h3>Mangalore to Goa</h3>
+                            <p>Plan a holiday for beach visits, sightseeing and exploring Goa.</p>
+                            <span class="route-link">Explore Route →</span>
+                        </div>
                     </a>
 
-                    <a class="route-card"
-                       href="routes/mangalore-to-coorg.html">
-                        <span class="route-number">08</span>
-                        <h3>Mangalore to Coorg</h3>
-                        <p>
-                            Enjoy coffee estates, green landscapes
-                            and hill-station attractions.
-                        </p>
-                        <span class="route-link">View Route →</span>
+                    <a class="route-card" href="routes/mangalore-to-coorg.html">
+                        <div class="route-image">
+                            <img src="https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=900&q=80"
+                                 alt="Lush green forest in a hill destination"
+                                 loading="lazy">
+                            <span class="route-number">08</span>
+                        </div>
+                        <div class="route-content">
+                            <h3>Mangalore to Coorg</h3>
+                            <p>Enjoy coffee country, green landscapes and hill-station attractions.</p>
+                            <span class="route-link">Explore Route →</span>
+                        </div>
                     </a>
 
-                    <a class="route-card"
-                       href="routes/mangalore-to-chikkamagaluru.html">
-                        <span class="route-number">09</span>
-                        <h3>Mangalore to Chikkamagaluru</h3>
-                        <p>
-                            Discover mountain viewpoints, coffee estates
-                            and scenic nature destinations.
-                        </p>
-                        <span class="route-link">View Route →</span>
+                    <a class="route-card" href="routes/mangalore-to-chikkamagaluru.html">
+                        <div class="route-image">
+                            <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=900&q=80"
+                                 alt="Mountain landscape and scenic viewpoints"
+                                 loading="lazy">
+                            <span class="route-number">09</span>
+                        </div>
+                        <div class="route-content">
+                            <h3>Mangalore to Chikkamagaluru</h3>
+                            <p>Discover mountain viewpoints, coffee estates and nature destinations.</p>
+                            <span class="route-link">Explore Route →</span>
+                        </div>
                     </a>
 
-                    <a class="route-card"
-                       href="routes/mangalore-to-mysore.html">
-                        <span class="route-number">10</span>
-                        <h3>Mangalore to Mysore</h3>
-                        <p>
-                            Explore Mysore Palace, heritage attractions
-                            and cultural landmarks.
-                        </p>
-                        <span class="route-link">View Route →</span>
+                    <a class="route-card" href="routes/mangalore-to-mysore.html">
+                        <div class="route-image">
+                            <img src="https://images.unsplash.com/photo-1606293926075-69a00dbfde81?auto=format&fit=crop&w=900&q=80"
+                                 alt="Indian heritage architecture"
+                                 loading="lazy">
+                            <span class="route-number">10</span>
+                        </div>
+                        <div class="route-content">
+                            <h3>Mangalore to Mysore</h3>
+                            <p>Explore Mysore Palace, heritage attractions and cultural landmarks.</p>
+                            <span class="route-link">Explore Route →</span>
+                        </div>
                     </a>
 
                 </div>
             </div>
         </section>
 
-        <!-- WHY CHOOSE US -->
-        <section class="section section-light">
-            <div class="container">
+        <!-- BENEFITS -->
+        <section class="route-benefits">
+            <div class="routes-container">
 
-                <div class="section-heading">
-                    <span class="eyebrow">YOUR JOURNEY MATTERS</span>
+                <div class="routes-heading">
+                    <span class="eyebrow">Your journey matters</span>
                     <h2>Plan Your Trip with Confidence</h2>
                     <p>
-                        Get in touch with our team to discuss your
-                        destination, travel dates, vehicle requirements
-                        and itinerary.
+                        Discuss your destination, travel dates, vehicle
+                        requirements and itinerary with our team.
                     </p>
                 </div>
 
-                <div class="services-grid">
+                <div class="benefit-grid">
 
-                    <div class="service-card">
+                    <div class="benefit-card">
+                        <div class="benefit-icon" aria-hidden="true">🚕</div>
                         <h3>Comfortable Travel</h3>
                         <p>
                             Choose a suitable vehicle for your family,
@@ -255,19 +843,21 @@
                         </p>
                     </div>
 
-                    <div class="service-card">
+                    <div class="benefit-card">
+                        <div class="benefit-icon" aria-hidden="true">🛕</div>
                         <h3>Temple and Tourist Trips</h3>
                         <p>
-                            Plan journeys to temples, beaches,
-                            hill stations and heritage destinations.
+                            Plan journeys to temples, beaches, hill stations
+                            and heritage destinations across Karnataka.
                         </p>
                     </div>
 
-                    <div class="service-card">
-                        <h3>Travel Assistance</h3>
+                    <div class="benefit-card">
+                        <div class="benefit-icon" aria-hidden="true">📍</div>
+                        <h3>Personalised Trip Planning</h3>
                         <p>
-                            Contact us to discuss pickup locations,
-                            stops, schedules and your travel plans.
+                            Discuss pickup locations, sightseeing stops,
+                            schedules and your preferred itinerary.
                         </p>
                     </div>
 
@@ -276,21 +866,21 @@
         </section>
 
         <!-- CALL TO ACTION -->
-        <section class="cta-section">
-            <div class="container">
+        <section class="routes-cta">
+            <div class="routes-cta-inner">
                 <h2>Planning a Trip from Mangalore?</h2>
                 <p>
                     Tell us your destination and travel requirements.
-                    Contact Shree Sharada Taxi Service for an enquiry.
+                    Contact Shree Sharada Taxi Service to discuss your journey.
                 </p>
 
-                <div class="hero-actions">
-                    <a href="tel:+918296989556" class="btn btn-primary">
+                <div class="routes-actions" style="justify-content:center;">
+                    <a href="tel:+918296989556" class="btn btn-call">
                         Call +91 82969 89556
                     </a>
 
                     <a href="https://wa.me/918296989556?text=Hello%2C%20I%20need%20a%20taxi%20from%20Mangalore."
-                       class="btn btn-secondary"
+                       class="btn btn-whatsapp"
                        target="_blank"
                        rel="noopener noreferrer">
                         Enquire on WhatsApp
@@ -308,7 +898,9 @@
             <div class="footer-brand">
                 <img src="assets/logo.png"
                      alt="Shree Sharada Taxi Service logo"
-                     loading="lazy">
+                     loading="lazy"
+                     width="70"
+                     height="70">
 
                 <h3>Shree Sharada Taxi Service</h3>
                 <p>Your travel partner in Mangalore, Karnataka.</p>
@@ -328,9 +920,7 @@
                 <h3>Contact Us</h3>
                 <p>Mangalore, Karnataka, India</p>
 
-                <a href="tel:+918296989556">
-                    Call: +91 82969 89556
-                </a>
+                <a href="tel:+918296989556">Call: +91 82969 89556</a>
 
                 <a href="https://wa.me/918296989556"
                    target="_blank"
@@ -361,6 +951,26 @@
     </a>
 
     <script src="script.js"></script>
+
+    <script>
+        /* Mobile navigation fallback */
+        (function () {
+            const menuButton = document.querySelector(".menu-toggle");
+            const navigation = document.querySelector("#main-navigation");
+
+            if (menuButton && navigation) {
+                menuButton.addEventListener("click", function () {
+                    const isOpen = navigation.classList.toggle("active");
+                    menuButton.setAttribute("aria-expanded", String(isOpen));
+                });
+            }
+
+            const year = document.querySelector("[data-year]");
+            if (year) {
+                year.textContent = new Date().getFullYear();
+            }
+        })();
+    </script>
 
 </body>
 </html>
