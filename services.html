@@ -1,4 +1,4 @@
-
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,712 +7,744 @@
 
     <title>Taxi Services in Mangalore | Shree Sharada Taxi Service</title>
 
-    <meta name="description" content="Explore taxi services from Shree Sharada Taxi Service in Mangalore, including airport transfers, local taxi travel, outstation trips, family travel and sightseeing tours.">
+    <meta name="description" content="Explore taxi services in Mangalore from Shree Sharada Taxi Service, including airport transfers, local taxi, outstation trips, family travel, corporate taxi and sightseeing.">
+
+    <meta name="keywords" content="taxi service Mangalore, airport taxi Mangalore, local taxi Mangalore, outstation taxi, family taxi, corporate taxi, sightseeing taxi">
 
     <meta name="robots" content="index, follow">
-    <meta name="theme-color" content="#123b65">
 
     <link rel="canonical" href="https://shreesharadataxiservice.com/services.html">
     <link rel="stylesheet" href="style.css">
 
-    <script src="script.js" defer></script>
+    <meta name="theme-color" content="#102746">
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: #263449;
+            line-height: 1.7;
+            background: #ffffff;
+        }
+
+        .site-header {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            width: 100%;
+            background: #ffffff;
+            box-shadow: 0 2px 12px rgba(16, 39, 70, 0.10);
+        }
+
+        .header-inner {
+            width: 100%;
+            max-width: 1200px;
+            min-height: 76px;
+            margin: 0 auto;
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            min-width: 0;
+            text-decoration: none;
+            color: #102746;
+        }
+
+        .logo img {
+            display: block;
+            width: 52px;
+            height: 52px;
+            max-width: 52px;
+            object-fit: contain;
+            flex-shrink: 0;
+        }
+
+        .logo span {
+            font-size: 17px;
+            font-weight: 700;
+            line-height: 1.3;
+        }
+
+        .main-nav {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            flex-wrap: wrap;
+            gap: 17px;
+        }
+
+        .main-nav a {
+            color: #102746;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 600;
+            transition: color 0.2s ease;
+        }
+
+        .main-nav a:hover,
+        .main-nav a.active {
+            color: #bd8d28;
+        }
+
+        .hero {
+            padding: 75px 20px;
+            text-align: center;
+            color: #ffffff;
+            background: linear-gradient(125deg, #102746, #0757a8);
+        }
+
+        .hero-inner {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .eyebrow {
+            display: inline-block;
+            margin-bottom: 12px;
+            color: #f1ce79;
+            font-weight: 700;
+            font-size: 13px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        .hero h1 {
+            margin: 0 0 18px;
+            font-size: clamp(32px, 5vw, 49px);
+            line-height: 1.2;
+        }
+
+        .hero p {
+            max-width: 760px;
+            margin: 0 auto 25px;
+            font-size: 17px;
+        }
+
+        .btn {
+            display: inline-block;
+            margin: 5px;
+            padding: 12px 23px;
+            border: 2px solid #d8ad52;
+            border-radius: 6px;
+            background: #d8ad52;
+            color: #102746;
+            text-decoration: none;
+            font-weight: 700;
+            transition: 0.2s ease;
+        }
+
+        .btn:hover {
+            background: #f1ce79;
+            border-color: #f1ce79;
+        }
+
+        .btn-light {
+            background: transparent;
+            border-color: #ffffff;
+            color: #ffffff;
+        }
+
+        .btn-light:hover {
+            background: #ffffff;
+            color: #102746;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1150px;
+            margin: 0 auto;
+            padding: 55px 20px;
+        }
+
+        .section-heading {
+            max-width: 780px;
+            margin: 0 auto 35px;
+            text-align: center;
+        }
+
+        .section-heading h2 {
+            margin: 0 0 12px;
+            color: #102746;
+            font-size: clamp(26px, 4vw, 36px);
+            line-height: 1.3;
+        }
+
+        .section-heading p {
+            margin: 0;
+            color: #647184;
+        }
+
+        .service-grid {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 22px;
+        }
+
+        .service-card {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 25px;
+            min-width: 0;
+            border: 1px solid #e2e8f0;
+            border-radius: 12px;
+            background: #ffffff;
+            box-shadow: 0 5px 20px rgba(16, 39, 70, 0.05);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .service-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 28px rgba(16, 39, 70, 0.10);
+        }
+
+        .service-number {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 43px;
+            height: 43px;
+            margin-bottom: 15px;
+            border-radius: 10px;
+            background: #edf3fa;
+            color: #0757a8;
+            font-size: 15px;
+            font-weight: 800;
+        }
+
+        .service-card h3 {
+            margin: 0 0 10px;
+            color: #102746;
+            font-size: 20px;
+            line-height: 1.35;
+        }
+
+        .service-card p {
+            margin: 0 0 20px;
+            color: #647184;
+            font-size: 15px;
+        }
+
+        .service-link {
+            display: inline-block;
+            margin-top: auto;
+            color: #0757a8;
+            text-decoration: none;
+            font-weight: 700;
+        }
+
+        .service-link:hover {
+            color: #bd8d28;
+        }
+
+        .benefits {
+            background: #f3f6fa;
+        }
+
+        .benefit-grid {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 22px;
+        }
+
+        .benefit {
+            padding: 22px;
+            border-radius: 10px;
+            background: #ffffff;
+            border: 1px solid #e4e9ef;
+        }
+
+        .benefit h3 {
+            margin: 0 0 8px;
+            color: #102746;
+            font-size: 18px;
+        }
+
+        .benefit p {
+            margin: 0;
+            color: #647184;
+            font-size: 15px;
+        }
+
+        .booking-steps {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .booking-steps li {
+            margin-bottom: 12px;
+            padding-left: 5px;
+        }
+
+        .cta-section {
+            padding: 50px 20px;
+            text-align: center;
+            background: #edf3fa;
+        }
+
+        .cta-section h2 {
+            margin: 0 0 12px;
+            color: #102746;
+            font-size: clamp(25px, 4vw, 34px);
+        }
+
+        .cta-section p {
+            max-width: 650px;
+            margin: 0 auto 20px;
+            color: #647184;
+        }
+
+        .site-footer {
+            padding: 30px 20px;
+            text-align: center;
+            background: #102746;
+            color: #ffffff;
+        }
+
+        .footer-logo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 12px;
+        }
+
+        .footer-logo img {
+            width: 45px;
+            height: 45px;
+            object-fit: contain;
+        }
+
+        .footer-logo span {
+            font-weight: 700;
+        }
+
+        .site-footer p {
+            margin: 7px 0;
+        }
+
+        .site-footer a {
+            color: #f1ce79;
+            text-decoration: none;
+        }
+
+        .footer-links {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 16px;
+            margin: 15px 0;
+        }
+
+        .whatsapp-float {
+            position: fixed;
+            right: 18px;
+            bottom: 18px;
+            z-index: 999;
+            display: inline-block;
+            padding: 12px 17px;
+            border-radius: 30px;
+            background: #168b50;
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 700;
+            box-shadow: 0 4px 14px rgba(0, 0, 0, 0.18);
+        }
+
+        @media (max-width: 900px) {
+            .service-grid {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+
+            .benefit-grid {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+
+            .header-inner {
+                flex-direction: column;
+                padding: 12px 15px;
+                gap: 12px;
+            }
+
+            .main-nav {
+                justify-content: center;
+                gap: 13px;
+            }
+        }
+
+        @media (max-width: 560px) {
+            .logo img {
+                width: 45px;
+                height: 45px;
+            }
+
+            .logo span {
+                font-size: 15px;
+            }
+
+            .main-nav {
+                gap: 10px 14px;
+            }
+
+            .main-nav a {
+                font-size: 13px;
+            }
+
+            .hero {
+                padding: 55px 18px;
+            }
+
+            .hero p {
+                font-size: 15px;
+            }
+
+            .container {
+                padding: 40px 16px;
+            }
+
+            .service-grid,
+            .benefit-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .service-card {
+                padding: 22px;
+            }
+
+            .whatsapp-float {
+                right: 12px;
+                bottom: 12px;
+            }
+        }
+    </style>
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "TaxiService",
+        "name": "Shree Sharada Taxi Service",
+        "url": "https://shreesharadataxiservice.com/",
+        "telephone": "+91 82969 89556",
+        "areaServed": {
+            "@type": "City",
+            "name": "Mangalore",
+            "containedInPlace": {
+                "@type": "State",
+                "name": "Karnataka"
+            }
+        },
+        "description": "Taxi services in Mangalore for airport transfers, local travel, outstation journeys, family trips, corporate travel and sightseeing."
+    }
+    </script>
 </head>
 
 <body>
 
-    <!-- HEADER -->
-    <header class="site-header">
-        <div class="container header-inner">
+<header class="site-header">
+    <div class="header-inner">
 
-            <a href="index.html" class="brand" aria-label="Shree Sharada Taxi Service Home">
-                <img
-                    src="assets/logo.png"
-                    alt="Shree Sharada Taxi Service logo"
-                    class="site-logo"
-                >
-                <span class="brand-text">
-                    <strong>Shree Sharada</strong>
-                    <small>Taxi Service · Mangalore</small>
-                </span>
+        <a class="logo" href="index.html" aria-label="Shree Sharada Taxi Service home">
+            <img src="assets/logo.png" alt="Shree Sharada Taxi Service logo">
+            <span>Shree Sharada Taxi Service</span>
+        </a>
+
+        <nav class="main-nav" aria-label="Main navigation">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a class="active" href="services.html">Services</a>
+            <a href="fleet.html">Fleet</a>
+            <a href="packages.html">Packages</a>
+            <a href="routes.html">Routes</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+
+    </div>
+</header>
+
+<main>
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="hero-inner">
+            <span class="eyebrow">Our Taxi Services</span>
+
+            <h1>Taxi Services in Mangalore</h1>
+
+            <p>
+                Discover convenient taxi travel for airport transfers,
+                city journeys, family holidays, business trips and sightseeing.
+                Contact Shree Sharada Taxi Service to plan your journey.
+            </p>
+
+            <a class="btn" href="tel:+918296989556">Call Us Now</a>
+
+            <a class="btn btn-light"
+               href="https://wa.me/918296989556?text=Hello%2C%20I%20would%20like%20to%20enquire%20about%20your%20taxi%20services.">
+                WhatsApp Enquiry
             </a>
+        </div>
+    </section>
 
-            <button
-                class="menu-toggle"
-                type="button"
-                aria-label="Open navigation menu"
-                aria-expanded="false"
-                aria-controls="primary-navigation"
-            >
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
+    <!-- ALL 9 SERVICE PAGES -->
+    <section class="container" id="all-services">
 
-            <nav class="main-nav" id="primary-navigation" aria-label="Main navigation">
-                <a href="index.html">Home</a>
-                <a href="about.html">About Us</a>
-                <a href="services.html" class="active" aria-current="page">Services</a>
-                <a href="fleet.html">Our Fleet</a>
-                <a href="packages.html">Tour Packages</a>
-                <a href="routes.html">Popular Routes</a>
-                <a href="contact.html" class="nav-cta">Contact Us</a>
-            </nav>
+        <div class="section-heading">
+            <h2>Explore Our Taxi Services</h2>
+            <p>
+                Choose a service that matches your travel requirements.
+                Share your itinerary with us to enquire about vehicle availability
+                and pricing.
+            </p>
+        </div>
+
+        <div class="service-grid">
+
+            <article class="service-card">
+                <span class="service-number">01</span>
+                <h3>Airport Pickup &amp; Drop</h3>
+                <p>
+                    Arrange airport transfers between Mangalore International
+                    Airport, your home, hotel or preferred destination.
+                </p>
+                <a class="service-link" href="airport-pickup-drop.html">
+                    Explore Service &rarr;
+                </a>
+            </article>
+
+            <article class="service-card">
+                <span class="service-number">02</span>
+                <h3>Mangalore Airport Taxi</h3>
+                <p>
+                    Plan your arrival or departure transportation with
+                    advance booking and convenient pickup arrangements.
+                </p>
+                <a class="service-link" href="mangalore-airport-taxi.html">
+                    Explore Service &rarr;
+                </a>
+            </article>
+
+            <article class="service-card">
+                <span class="service-number">03</span>
+                <h3>Local Taxi in Mangalore</h3>
+                <p>
+                    Arrange city travel for shopping, appointments,
+                    railway station transfers, meetings and local visits.
+                </p>
+                <a class="service-link" href="local-mangalore-taxi.html">
+                    Explore Service &rarr;
+                </a>
+            </article>
+
+            <article class="service-card">
+                <span class="service-number">04</span>
+                <h3>Outstation Taxi</h3>
+                <p>
+                    Plan intercity journeys from Mangalore for holidays,
+                    business travel, family visits and pilgrimage trips.
+                </p>
+                <a class="service-link" href="outstation-taxi.html">
+                    Explore Service &rarr;
+                </a>
+            </article>
+
+            <article class="service-card">
+                <span class="service-number">05</span>
+                <h3>Round-Trip Taxi</h3>
+                <p>
+                    Organise your departure and return journey together
+                    with a planned itinerary and confirmed fare.
+                </p>
+                <a class="service-link" href="round-trip-taxi.html">
+                    Explore Service &rarr;
+                </a>
+            </article>
+
+            <article class="service-card">
+                <span class="service-number">06</span>
+                <h3>Family Taxi Service</h3>
+                <p>
+                    Arrange suitable transportation for family outings,
+                    celebrations, holidays and group journeys.
+                </p>
+                <a class="service-link" href="family-taxi-service.html">
+                    Explore Service &rarr;
+                </a>
+            </article>
+
+            <article class="service-card">
+                <span class="service-number">07</span>
+                <h3>Corporate Taxi Service</h3>
+                <p>
+                    Enquire about transportation for business meetings,
+                    visiting clients, airport transfers and company events.
+                </p>
+                <a class="service-link" href="corporate-taxi-service.html">
+                    Explore Service &rarr;
+                </a>
+            </article>
+
+            <article class="service-card">
+                <span class="service-number">08</span>
+                <h3>Hotel Transfer Service</h3>
+                <p>
+                    Arrange transportation between hotels, the airport,
+                    railway station, meeting venues and local attractions.
+                </p>
+                <a class="service-link" href="hotel-transfer-service.html">
+                    Explore Service &rarr;
+                </a>
+            </article>
+
+            <article class="service-card">
+                <span class="service-number">09</span>
+                <h3>Sightseeing &amp; Tour Taxi</h3>
+                <p>
+                    Plan local sightseeing and visits to beaches, temples
+                    and other attractions around Mangalore.
+                </p>
+                <a class="service-link" href="sightseeing-tour-taxi.html">
+                    Explore Service &rarr;
+                </a>
+            </article>
 
         </div>
-    </header>
+    </section>
 
-
-    <main>
-
-        <!-- PAGE HERO -->
-        <section class="page-hero">
-            <div class="container">
-                <div class="content-narrow">
-
-                    <span class="eyebrow">OUR TAXI SERVICES</span>
-
-                    <h1>
-                        Taxi Services in
-                        <span>Mangalore</span>
-                    </h1>
-
-                    <p>
-                        Explore convenient taxi arrangements for airport
-                        transfers, local journeys, outstation travel,
-                        family trips and sightseeing from Mangalore.
-                    </p>
-
-                    <div class="hero-actions">
-                        <a href="contact.html" class="btn btn-primary">
-                            Enquire Now
-                        </a>
-
-                        <a
-                            href="https://wa.me/918296989556?text=Hello%20Shree%20Sharada%20Taxi%20Service%2C%20I%20would%20like%20to%20enquire%20about%20your%20taxi%20services."
-                            class="btn btn-outline"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            WhatsApp Us
-                        </a>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-
-
-        <!-- INTRODUCTION -->
-        <section class="section">
-            <div class="container">
-
-                <div class="section-heading">
-                    <span class="eyebrow">TRAVEL YOUR WAY</span>
-
-                    <h2>
-                        Find the Right Taxi
-                        <span>for Your Journey</span>
-                    </h2>
-
-                    <p>
-                        Every journey has different requirements. Tell us
-                        where you need to go, when you plan to travel and
-                        how many passengers are travelling so we can discuss
-                        suitable arrangements.
-                    </p>
-                </div>
-
-                <div class="about-grid">
-
-                    <div class="about-image">
-                        <img
-                            src="https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?auto=format&fit=crop&w=1100&q=85"
-                            alt="Comfortable car interior for taxi travel"
-                            loading="lazy"
-                        >
-                    </div>
-
-                    <div class="about-content">
-
-                        <span class="eyebrow">BASED IN MANGALORE</span>
-
-                        <h2>
-                            Convenient Travel
-                            <span>Starts with Good Planning</span>
-                        </h2>
-
-                        <p>
-                            Shree Sharada Taxi Service helps travellers
-                            arrange journeys beginning in Mangalore and
-                            travel to destinations according to their needs.
-                        </p>
-
-                        <p>
-                            You can enquire about pickup and drop-off
-                            services, local travel, longer journeys,
-                            sightseeing trips and tour package transport.
-                        </p>
-
-                        <p>
-                            Contact us in advance with your journey details
-                            to discuss vehicle availability, pricing and
-                            pickup arrangements.
-                        </p>
-
-                        <a href="contact.html" class="text-link">
-                            Contact Our Team →
-                        </a>
-
-                    </div>
-
-                </div>
-
-            </div>
-        </section>
-
-
-        <!-- SERVICE CARDS -->
-        <section class="section section-light">
-            <div class="container">
-
-                <div class="section-heading">
-                    <span class="eyebrow">WHAT WE OFFER</span>
-
-                    <h2>
-                        Our Taxi
-                        <span>Services</span>
-                    </h2>
-
-                    <p>
-                        Choose the service that suits your plans and contact
-                        us to discuss your route and travel requirements.
-                    </p>
-                </div>
-
-                <div class="services-grid">
-
-                    <!-- AIRPORT TRANSFERS -->
-                    <article class="service-card">
-
-                        <img
-                            src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=900&q=85"
-                            alt="Passenger aircraft at an airport"
-                            loading="lazy"
-                        >
-
-                        <div class="service-card-content">
-                            <h3>Airport Pickup and Drop</h3>
-
-                            <p>
-                                Arrange taxi transport to or from Mangalore
-                                International Airport. Share your flight
-                                schedule and pickup details when enquiring.
-                            </p>
-
-                            <a
-                                href="https://wa.me/918296989556?text=Hello%2C%20I%20need%20an%20airport%20pickup%20or%20drop%20taxi%20from%20Mangalore."
-                                class="text-link"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                Enquire About Airport Taxi →
-                            </a>
-                        </div>
-
-                    </article>
-
-
-                    <!-- LOCAL TAXI -->
-                    <article class="service-card">
-
-                        <img
-                            src="https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?auto=format&fit=crop&w=900&q=85"
-                            alt="Car ready for a local journey"
-                            loading="lazy"
-                        >
-
-                        <div class="service-card-content">
-                            <h3>Local Taxi Service</h3>
-
-                            <p>
-                                Arrange local transport around Mangalore
-                                for shopping, appointments, business visits,
-                                family activities and other travel needs.
-                            </p>
-
-                            <a
-                                href="https://wa.me/918296989556?text=Hello%2C%20I%20would%20like%20to%20enquire%20about%20local%20taxi%20service%20in%20Mangalore."
-                                class="text-link"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                Enquire About Local Taxi →
-                            </a>
-                        </div>
-
-                    </article>
-
-
-                    <!-- OUTSTATION -->
-                    <article class="service-card">
-
-                        <img
-                            src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=900&q=85"
-                            alt="Mountain scenery along a road trip"
-                            loading="lazy"
-                        >
-
-                        <div class="service-card-content">
-                            <h3>Outstation Taxi</h3>
-
-                            <p>
-                                Plan travel from Mangalore to other cities,
-                                towns and destinations. Share your route and
-                                journey dates for a quotation.
-                            </p>
-
-                            <a
-                                href="https://wa.me/918296989556?text=Hello%2C%20I%20would%20like%20to%20enquire%20about%20outstation%20taxi%20travel%20from%20Mangalore."
-                                class="text-link"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                Enquire About Outstation Travel →
-                            </a>
-                        </div>
-
-                    </article>
-
-
-                    <!-- ROUND TRIP -->
-                    <article class="service-card">
-
-                        <img
-                            src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=900&q=85"
-                            alt="Scenic destination for a planned return journey"
-                            loading="lazy"
-                        >
-
-                        <div class="service-card-content">
-                            <h3>Round-Trip Taxi</h3>
-
-                            <p>
-                                Discuss return travel for family visits,
-                                temple visits, business travel and holidays
-                                with planned pickup and return details.
-                            </p>
-
-                            <a
-                                href="https://wa.me/918296989556?text=Hello%2C%20I%20would%20like%20a%20quotation%20for%20a%20round-trip%20taxi%20from%20Mangalore."
-                                class="text-link"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                Enquire About Round Trips →
-                            </a>
-                        </div>
-
-                    </article>
-
-
-                    <!-- FAMILY TRAVEL -->
-                    <article class="service-card">
-
-                        <img
-                            src="https://images.unsplash.com/photo-1511895426328-dc8714191300?auto=format&fit=crop&w=900&q=85"
-                            alt="Family spending time together"
-                            loading="lazy"
-                        >
-
-                        <div class="service-card-content">
-                            <h3>Family Travel</h3>
-
-                            <p>
-                                Discuss vehicle options and travel
-                                arrangements for family outings, visits,
-                                holidays and group journeys.
-                            </p>
-
-                            <a
-                                href="https://wa.me/918296989556?text=Hello%2C%20I%20would%20like%20to%20enquire%20about%20a%20taxi%20for%20family%20travel."
-                                class="text-link"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                Plan Family Travel →
-                            </a>
-                        </div>
-
-                    </article>
-
-
-                    <!-- TOUR PACKAGE TAXI -->
-                    <article class="service-card">
-
-                        <img
-                            src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=900&q=85"
-                            alt="Scenic hill and lake destination"
-                            loading="lazy"
-                        >
-
-                        <div class="service-card-content">
-                            <h3>Tour and Sightseeing Taxi</h3>
-
-                            <p>
-                                Plan visits to temples, beaches, heritage
-                                attractions, hill stations and other
-                                sightseeing destinations.
-                            </p>
-
-                            <a href="packages.html" class="text-link">
-                                Explore Tour Packages →
-                            </a>
-                        </div>
-
-                    </article>
-
-
-                    <!-- BUSINESS TRAVEL -->
-                    <article class="service-card">
-
-                        <img
-                            src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=900&q=85"
-                            alt="Professional office environment"
-                            loading="lazy"
-                        >
-
-                        <div class="service-card-content">
-                            <h3>Business Travel</h3>
-
-                            <p>
-                                Enquire about taxi arrangements for meetings,
-                                office visits, business appointments and
-                                professional travel requirements.
-                            </p>
-
-                            <a
-                                href="https://wa.me/918296989556?text=Hello%2C%20I%20would%20like%20to%20enquire%20about%20business%20taxi%20travel."
-                                class="text-link"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                Enquire About Business Travel →
-                            </a>
-                        </div>
-
-                    </article>
-
-
-                    <!-- HOTEL TRANSFERS -->
-                    <article class="service-card">
-
-                        <img
-                            src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=900&q=85"
-                            alt="Hotel accommodation for travellers"
-                            loading="lazy"
-                        >
-
-                        <div class="service-card-content">
-                            <h3>Hotel Transfers</h3>
-
-                            <p>
-                                Arrange transport between your hotel,
-                                airport, railway station or selected
-                                destinations in and around Mangalore.
-                            </p>
-
-                            <a
-                                href="https://wa.me/918296989556?text=Hello%2C%20I%20would%20like%20to%20enquire%20about%20hotel%20transfer%20taxi%20service."
-                                class="text-link"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                Enquire About Hotel Transfers →
-                            </a>
-                        </div>
-
-                    </article>
-
-
-                    <!-- TEMPLE TOURS -->
-                    <article class="service-card">
-
-                        <img
-                            src="https://images.unsplash.com/photo-1606293926075-69a00dbfde81?auto=format&fit=crop&w=900&q=85"
-                            alt="Traditional temple architecture"
-                            loading="lazy"
-                        >
-
-                        <div class="service-card-content">
-                            <h3>Temple Visit Taxi</h3>
-
-                            <p>
-                                Discuss transport for temple visits and
-                                pilgrimage routes around coastal Karnataka
-                                and other destinations.
-                            </p>
-
-                            <a
-                                href="https://wa.me/918296989556?text=Hello%2C%20I%20would%20like%20to%20enquire%20about%20a%20taxi%20for%20temple%20visits%20from%20Mangalore."
-                                class="text-link"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                Plan a Temple Visit →
-                            </a>
-                        </div>
-
-                    </article>
-
-                </div>
-
-            </div>
-        </section>
-
-
-        <!-- HOW TO BOOK -->
-        <section class="section">
-            <div class="container">
-
-                <div class="section-heading">
-                    <span class="eyebrow">SIMPLE BOOKING PROCESS</span>
-
-                    <h2>
-                        How to Book
-                        <span>Your Taxi</span>
-                    </h2>
-
-                    <p>
-                        Send us your journey details so we can discuss
-                        availability and provide the relevant fare information.
-                    </p>
-                </div>
-
-                <div class="features-grid">
-
-                    <article class="feature-card">
-                        <div class="feature-icon" aria-hidden="true">01</div>
-                        <h3>Share Your Route</h3>
-                        <p>
-                            Tell us your pickup point, destination and
-                            preferred travel date.
-                        </p>
-                    </article>
-
-                    <article class="feature-card">
-                        <div class="feature-icon" aria-hidden="true">02</div>
-                        <h3>Discuss Your Requirements</h3>
-                        <p>
-                            Share passenger count, luggage needs, return
-                            plans and preferred vehicle type.
-                        </p>
-                    </article>
-
-                    <article class="feature-card">
-                        <div class="feature-icon" aria-hidden="true">03</div>
-                        <h3>Confirm Your Booking</h3>
-                        <p>
-                            Review the quoted fare and availability before
-                            confirming your travel arrangements.
-                        </p>
-                    </article>
-
-                </div>
-
-            </div>
-        </section>
-
-
-        <!-- FAQ -->
-        <section class="section section-light">
-            <div class="container content-narrow">
-
-                <div class="section-heading">
-                    <span class="eyebrow">COMMON QUESTIONS</span>
-
-                    <h2>
-                        Taxi Service
-                        <span>FAQs</span>
-                    </h2>
-                </div>
-
-                <div class="faq-list">
-
-                    <details class="faq-item">
-                        <summary>How can I book a taxi in Mangalore?</summary>
-                        <p>
-                            Call +91 8296989556 or contact us through
-                            WhatsApp. Share your travel date, pickup point,
-                            destination and passenger count to discuss
-                            availability and pricing.
-                        </p>
-                    </details>
-
-                    <details class="faq-item">
-                        <summary>Do you provide airport pickup and drop services?</summary>
-                        <p>
-                            You can enquire about taxi arrangements to and
-                            from Mangalore International Airport. Share your
-                            flight timing and pickup or drop-off details
-                            when contacting us.
-                        </p>
-                    </details>
-
-                    <details class="faq-item">
-                        <summary>Can I enquire about outstation taxi travel?</summary>
-                        <p>
-                            Yes. Contact us with your starting location,
-                            destination, travel dates and whether you need
-                            return travel. We can discuss availability and
-                            a suitable quotation.
-                        </p>
-                    </details>
-
-                    <details class="faq-item">
-                        <summary>How is the taxi fare calculated?</summary>
-                        <p>
-                            The quotation may depend on the route, travel
-                            distance, journey duration, vehicle type and
-                            trip requirements. Confirm the applicable fare
-                            and any additional charges before booking.
-                        </p>
-                    </details>
-
-                    <details class="faq-item">
-                        <summary>Can I arrange a taxi for temple visits and sightseeing?</summary>
-                        <p>
-                            You can enquire about taxi arrangements for
-                            temple visits, beaches, sightseeing destinations
-                            and other planned trips. Share your itinerary
-                            so the travel arrangements can be discussed.
-                        </p>
-                    </details>
-
-                </div>
-
-            </div>
-        </section>
-
-
-        <!-- FINAL CTA -->
-        <section class="cta-section">
-            <div class="container cta-inner">
-
-                <div>
-                    <span class="eyebrow">NEED A TAXI?</span>
-
-                    <h2>Let's Plan Your Journey</h2>
-
-                    <p>
-                        Contact Shree Sharada Taxi Service to discuss
-                        your route, travel requirements and quotation.
-                    </p>
-                </div>
-
-                <div class="cta-actions">
-
-                    <a href="tel:+918296989556" class="btn btn-primary">
-                        Call 8296989556
-                    </a>
-
-                    <a
-                        href="https://wa.me/918296989556?text=Hello%20Shree%20Sharada%20Taxi%20Service%2C%20I%20would%20like%20to%20enquire%20about%20a%20taxi."
-                        class="btn btn-outline"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        WhatsApp Us
-                    </a>
-
-                </div>
-
-            </div>
-        </section>
-
-    </main>
-
-
-    <!-- FOOTER -->
-    <footer class="site-footer">
+    <!-- WHY CHOOSE US -->
+    <section class="benefits">
         <div class="container">
 
-            <div class="footer-grid">
-
-                <div class="footer-about">
-                    <a href="index.html" class="footer-brand">
-                        <img
-                            src="assets/logo.png"
-                            alt="Shree Sharada Taxi Service logo"
-                            class="footer-logo"
-                            loading="lazy"
-                        >
-                    </a>
-
-                    <h3>Shree Sharada Taxi Service</h3>
-
-                    <p>
-                        Taxi services in Mangalore for airport transfers,
-                        local travel, outstation journeys and sightseeing.
-                    </p>
-                </div>
-
-                <div class="footer-links">
-                    <h3>Quick Links</h3>
-
-                    <a href="index.html">Home</a>
-                    <a href="about.html">About Us</a>
-                    <a href="services.html">Services</a>
-                    <a href="fleet.html">Our Fleet</a>
-                    <a href="packages.html">Tour Packages</a>
-                    <a href="routes.html">Popular Routes</a>
-                    <a href="contact.html">Contact Us</a>
-                </div>
-
-                <div class="footer-contact">
-                    <h3>Contact Us</h3>
-
-                    <p>Mangalore, Karnataka, India</p>
-
-                    <p>
-                        <a href="tel:+918296989556">
-                            +91 82969 89556
-                        </a>
-                    </p>
-
-                    <p>
-                        <a
-                            href="https://wa.me/918296989556"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            Chat on WhatsApp
-                        </a>
-                    </p>
-                </div>
-
-            </div>
-
-            <div class="footer-bottom">
+            <div class="section-heading">
+                <h2>Why Contact Shree Sharada Taxi Service?</h2>
                 <p>
-                    © <span data-year></span> Shree Sharada Taxi Service.
-                    All rights reserved.
+                    We help you plan your travel based on your route,
+                    passenger count, timing and vehicle requirements.
                 </p>
             </div>
 
+            <div class="benefit-grid">
+
+                <div class="benefit">
+                    <h3>Convenient Booking</h3>
+                    <p>
+                        Contact us by phone or WhatsApp to discuss your
+                        travel plans and booking requirements.
+                    </p>
+                </div>
+
+                <div class="benefit">
+                    <h3>Vehicle Options</h3>
+                    <p>
+                        Ask about available vehicles suited to your
+                        passenger count and luggage.
+                    </p>
+                </div>
+
+                <div class="benefit">
+                    <h3>Planned Journeys</h3>
+                    <p>
+                        Share your destinations and preferred timings
+                        before confirming your trip.
+                    </p>
+                </div>
+
+            </div>
         </div>
-    </footer>
+    </section>
 
+    <!-- BOOKING PROCESS -->
+    <section class="container">
 
-    <!-- FLOATING WHATSAPP BUTTON -->
-    <a
-        href="https://wa.me/918296989556"
-        class="whatsapp-float"
-        target="_blank"
-        rel="noopener noreferrer"
-        aria-label="Contact Shree Sharada Taxi Service on WhatsApp"
-    >
-        WhatsApp
-    </a>
+        <div class="section-heading">
+            <h2>How to Book a Taxi</h2>
+            <p>Follow these simple steps to enquire about your journey.</p>
+        </div>
+
+        <ol class="booking-steps">
+            <li><strong>Choose your service:</strong> Select the service that best matches your travel needs.</li>
+            <li><strong>Share your details:</strong> Provide the travel date, pickup location, destination and passenger count.</li>
+            <li><strong>Confirm availability:</strong> Ask about suitable vehicles and your requested schedule.</li>
+            <li><strong>Confirm the fare:</strong> Discuss the fare and any applicable additional charges before booking.</li>
+        </ol>
+
+    </section>
+
+    <!-- CONTACT CTA -->
+    <section class="cta-section">
+        <h2>Looking for a Taxi in Mangalore?</h2>
+
+        <p>
+            Tell us where you want to travel, when you need the vehicle
+            and how many people are travelling. Contact us to request
+            availability and a fare quote.
+        </p>
+
+        <a class="btn" href="tel:+918296989556">Call +91 82969 89556</a>
+
+        <a class="btn"
+           href="https://wa.me/918296989556?text=Hello%2C%20I%20would%20like%20a%20taxi%20service%20quote.">
+            Enquire on WhatsApp
+        </a>
+
+    </section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+
+    <div class="footer-logo">
+        <img src="assets/logo.png" alt="Shree Sharada Taxi Service logo">
+        <span>Shree Sharada Taxi Service</span>
+    </div>
+
+    <p>Mangalore, Karnataka, India</p>
+
+    <p>
+        Phone:
+        <a href="tel:+918296989556">+91 82969 89556</a>
+    </p>
+
+    <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="fleet.html">Fleet</a>
+        <a href="packages.html">Packages</a>
+        <a href="routes.html">Routes</a>
+        <a href="contact.html">Contact</a>
+    </div>
+
+    <p>&copy; 2026 Shree Sharada Taxi Service. All rights reserved.</p>
+
+</footer>
+
+<a class="whatsapp-float"
+   href="https://wa.me/918296989556"
+   target="_blank"
+   rel="noopener noreferrer"
+   aria-label="Contact Shree Sharada Taxi Service on WhatsApp">
+    WhatsApp Us
+</a>
+
+<script src="script.js"></script>
 
 </body>
 </html>
+```
